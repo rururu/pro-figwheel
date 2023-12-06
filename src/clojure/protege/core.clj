@@ -8,7 +8,6 @@
  edu.stanford.smi.protege.model.Instance
  clojuretab.ClojureTab
  clojuretab.ProgramGenerator))
-
 (def ^:dynamic *prj* (.getCurrentProject (ProjectManager/getProjectManager)))
 (def ^:dynamic *kb* (.getKnowledgeBase *prj*))
 (def SEP ProgramGenerator/FILE_SEPARATOR)

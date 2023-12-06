@@ -1,0 +1,52 @@
+; Wed Dec 06 18:45:21 MSK 2023
+; 
+;+ (version "3.5")
+;+ (build "Build 663")
+
+([HelloPage_Class0] of  CljsProgram
+
+	(cloFunctions
+		[HelloPage_Class5]
+		[HelloPage_Class6]
+		[HelloPage_Class7])
+	(cloNamespace [HelloPage_Class1])
+	(css [HelloPage_Class3])
+	(epilogue "(update-page \"<h3>Good work Ru!</h3>\")")
+	(html [HelloPage_Class2])
+	(title "Hello Page"))
+
+([HelloPage_Class1] of  CloNamespace
+
+	(title "hello.page"))
+
+([HelloPage_Class2] of  HTML
+
+	(save-in "resources/public")
+	(source "<!doctype html>\n<html>\n  <head>\n    <meta charset=\"utf-8\">\n    <title>Hello Page</title>\n    <link rel=\"stylesheet\" href=\"css/hello_page.css\">\n  </head>\n  <body>\n    <div id=\"app\">\n      <h1>Hello Page!</h1>\n    </div>\n    <script src=\"cljs-out/dev-main.js\"></script>\n  </body>\n</html>")
+	(title "index"))
+
+([HelloPage_Class3] of  CSS
+
+	(save-in "resources/public/css")
+	(source "div, h1, input {\n    font-family: HelveticaNeue, Helvetica;\n    color: #080;\n}")
+	(title "hello_page"))
+
+([HelloPage_Class4] of  FigwheelController
+
+	(cljs-program [HelloPage_Class0])
+	(title "FigwheelController"))
+
+([HelloPage_Class5] of  CloFunction
+
+	(source "(js/document.getElementById id)")
+	(title "get-element [id]"))
+
+([HelloPage_Class6] of  CloFunction
+
+	(source "(set! (.-innerHTML (get-element id)) html)")
+	(title "set-element [id html]"))
+
+([HelloPage_Class7] of  CloFunction
+
+	(source "(set-element \"app\" html)")
+	(title "update-page [html]"))

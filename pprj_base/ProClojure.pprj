@@ -1,4 +1,4 @@
-; Mon Dec 04 17:47:39 MSK 2023
+; Wed Dec 06 17:02:07 MSK 2023
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -20,19 +20,21 @@
 ([BROWSER_SLOT_NAMES] of  Property_List
 
 	(properties
-		[ProClojure_ProjectKB_Class4]
-		[ProClojure_ProjectKB_Class5]
-		[ProClojure_ProjectKB_Class6]
-		[ProClojure_ProjectKB_Class7]
-		[ProClojure_ProjectKB_Class8]
-		[ProClojure_ProjectKB_Class9]
-		[ProClojure_ProjectKB_Class10]
-		[ProClojure_ProjectKB_Class11]
-		[ProClojure_ProjectKB_Class12]
-		[ProClojure_ProjectKB_Class13]
-		[ProClojure_ProjectKB_Class14]
-		[ProClojure_ProjectKB_Class15]
-		[ProClojure_ProjectKB_Class16]))
+		[ProClojure_ProjectKB_Class20158]
+		[ProClojure_ProjectKB_Class20159]
+		[ProClojure_ProjectKB_Class20160]
+		[ProClojure_ProjectKB_Class20161]
+		[ProClojure_ProjectKB_Class20162]
+		[ProClojure_ProjectKB_Class20163]
+		[ProClojure_ProjectKB_Class20164]
+		[ProClojure_ProjectKB_Class20165]
+		[ProClojure_ProjectKB_Class20166]
+		[ProClojure_ProjectKB_Class20167]
+		[ProClojure_ProjectKB_Class20168]
+		[ProClojure_ProjectKB_Class20169]
+		[ProClojure_ProjectKB_Class20170]
+		[ProClojure_ProjectKB_Class20171]
+		[ProClojure_ProjectKB_Class20172]))
 
 ([Clojure_ProjectKB_Class100004] of  Boolean
 
@@ -1151,9 +1153,9 @@
 ([KB_127677_Class1] of  Map
 
 	(entries
-		[ProClojure_ProjectKB_Class17]
-		[ProClojure_ProjectKB_Class18]
-		[ProClojure_ProjectKB_Class19]))
+		[ProClojure_ProjectKB_Class20173]
+		[ProClojure_ProjectKB_Class20174]
+		[ProClojure_ProjectKB_Class20175]))
 
 ([KB_127677_Class100] of  Property_List
 )
@@ -1249,7 +1251,7 @@
 ([KB_127677_Class99] of  Property_List
 )
 
-([KB_900859_Class3] of  Map
+([KB_608255_Class3] of  Map
 )
 
 ([LAYOUT_PROPERTIES] of  Property_List
@@ -1331,11 +1333,6 @@
 	(x 0)
 	(y 60))
 
-([ProClojure_ProjectKB_Class10] of  String
-
-	(name "CloFuncall")
-	(string_value "source"))
-
 ([ProClojure_ProjectKB_Class10004] of  Widget
 
 	(height 60)
@@ -1350,86 +1347,810 @@
 ([ProClojure_ProjectKB_Class10005] of  Property_List
 )
 
-([ProClojure_ProjectKB_Class11] of  String
+([ProClojure_ProjectKB_Class20004] of  Widget
+
+	(is_hidden FALSE)
+	(name "Envalue")
+	(property_list [ProClojure_ProjectKB_Class20005])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
+
+([ProClojure_ProjectKB_Class20005] of  Property_List
+
+	(properties
+		[ProClojure_ProjectKB_Class20006]
+		[ProClojure_ProjectKB_Class20007]
+		[ProClojure_ProjectKB_Class20009]))
+
+([ProClojure_ProjectKB_Class20006] of  Property_List
+
+	(name "layout properties"))
+
+([ProClojure_ProjectKB_Class20007] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "value")
+	(property_list [ProClojure_ProjectKB_Class20008])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 200)
+	(x 100)
+	(y 0))
+
+([ProClojure_ProjectKB_Class20008] of  Property_List
+)
+
+([ProClojure_ProjectKB_Class20009] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "N")
+	(property_list [ProClojure_ProjectKB_Class20010])
+	(widget_class_name "edu.stanford.smi.protege.widget.IntegerFieldWidget")
+	(width 100)
+	(x 0)
+	(y 0))
+
+([ProClojure_ProjectKB_Class20010] of  Property_List
+)
+
+([ProClojure_ProjectKB_Class20011] of  Widget
+
+	(is_hidden FALSE)
+	(name "Evaluator")
+	(property_list [ProClojure_ProjectKB_Class20012])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
+
+([ProClojure_ProjectKB_Class20012] of  Property_List
+
+	(properties
+		[ProClojure_ProjectKB_Class20013]
+		[ProClojure_ProjectKB_Class20041]
+		[ProClojure_ProjectKB_Class20049]
+		[ProClojure_ProjectKB_Class20059]
+		[ProClojure_ProjectKB_Class20063]
+		[ProClojure_ProjectKB_Class20065]))
+
+([ProClojure_ProjectKB_Class20013] of  Property_List
+
+	(name "layout properties"))
+
+([ProClojure_ProjectKB_Class20014] of  Widget
+
+	(is_hidden FALSE)
+	(name "Funcall")
+	(property_list [ProClojure_ProjectKB_Class20015])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
+
+([ProClojure_ProjectKB_Class20015] of  Property_List
+
+	(properties
+		[ProClojure_ProjectKB_Class20016]
+		[ProClojure_ProjectKB_Class20017]
+		[ProClojure_ProjectKB_Class20019]))
+
+([ProClojure_ProjectKB_Class20016] of  Property_List
+
+	(name "layout properties"))
+
+([ProClojure_ProjectKB_Class20017] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "arguments")
+	(property_list [ProClojure_ProjectKB_Class20018])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 200)
+	(x 200)
+	(y 0))
+
+([ProClojure_ProjectKB_Class20018] of  Property_List
+)
+
+([ProClojure_ProjectKB_Class20019] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "function")
+	(property_list [ProClojure_ProjectKB_Class20020])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceFieldWidget")
+	(width 200)
+	(x 0)
+	(y 0))
+
+([ProClojure_ProjectKB_Class20020] of  Property_List
+
+	(properties
+		[ProClojure_ProjectKB_Class20021]
+		[ProClojure_ProjectKB_Class20022]))
+
+([ProClojure_ProjectKB_Class20021] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([ProClojure_ProjectKB_Class20022] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([ProClojure_ProjectKB_Class20041] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "butt-eval")
+	(property_list [ProClojure_ProjectKB_Class20042])
+	(widget_class_name "clojuretab.ClojureActionButton")
+	(width 200)
+	(x 420)
+	(y 370))
+
+([ProClojure_ProjectKB_Class20042] of  Property_List
+)
+
+([ProClojure_ProjectKB_Class20043] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "envalues")
+	(property_list [ProClojure_ProjectKB_Class20044])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 200)
+	(x 0)
+	(y 60))
+
+([ProClojure_ProjectKB_Class20044] of  Property_List
+)
+
+([ProClojure_ProjectKB_Class20045] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "envalues")
+	(property_list [ProClojure_ProjectKB_Class20046])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceFieldWidget")
+	(width 200)
+	(x 0)
+	(y 60))
+
+([ProClojure_ProjectKB_Class20046] of  Property_List
+
+	(properties
+		[ProClojure_ProjectKB_Class20047]
+		[ProClojure_ProjectKB_Class20048]))
+
+([ProClojure_ProjectKB_Class20047] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([ProClojure_ProjectKB_Class20048] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([ProClojure_ProjectKB_Class20049] of  Widget
+
+	(height 310)
+	(is_hidden FALSE)
+	(label "Envalues")
+	(name "envalues")
+	(property_list [ProClojure_ProjectKB_Class20050])
+	(widget_class_name "edu.stanford.smi.protegex.widget.instancetable.InstanceTableWidget")
+	(width 310)
+	(x 310)
+	(y 60))
+
+([ProClojure_ProjectKB_Class20050] of  Property_List
+
+	(properties
+		[ProClojure_ProjectKB_Class20067]
+		[ProClojure_ProjectKB_Class20069]
+		[ProClojure_ProjectKB_Class20070]
+		[ProClojure_ProjectKB_Class20071]
+		[ProClojure_ProjectKB_Class20073]
+		[ProClojure_ProjectKB_Class20074]
+		[ProClojure_ProjectKB_Class20075]
+		[ProClojure_ProjectKB_Class20077]
+		[ProClojure_ProjectKB_Class20080]
+		[ProClojure_ProjectKB_Class20081]
+		[ProClojure_ProjectKB_Class20082]
+		[ProClojure_ProjectKB_Class20083]
+		[ProClojure_ProjectKB_Class20084]
+		[ProClojure_ProjectKB_Class20085]
+		[ProClojure_ProjectKB_Class20086]
+		[ProClojure_ProjectKB_Class20087]
+		[ProClojure_ProjectKB_Class20088]
+		[ProClojure_ProjectKB_Class20089]
+		[ProClojure_ProjectKB_Class20090]
+		[ProClojure_ProjectKB_Class20091]
+		[ProClojure_ProjectKB_Class20092]
+		[ProClojure_ProjectKB_Class20093]
+		[ProClojure_ProjectKB_Class20094]
+		[ProClojure_ProjectKB_Class20095]
+		[ProClojure_ProjectKB_Class20096]
+		[ProClojure_ProjectKB_Class20097]
+		[ProClojure_ProjectKB_Class20098]
+		[ProClojure_ProjectKB_Class20099]
+		[ProClojure_ProjectKB_Class20100]
+		[ProClojure_ProjectKB_Class20101]
+		[ProClojure_ProjectKB_Class20102]
+		[ProClojure_ProjectKB_Class20103]
+		[ProClojure_ProjectKB_Class20104]
+		[ProClojure_ProjectKB_Class20135]
+		[ProClojure_ProjectKB_Class20138]
+		[ProClojure_ProjectKB_Class20139]))
+
+([ProClojure_ProjectKB_Class20053] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "funcalls")
+	(property_list [ProClojure_ProjectKB_Class20054])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 200)
+	(x 0)
+	(y 180))
+
+([ProClojure_ProjectKB_Class20054] of  Property_List
+)
+
+([ProClojure_ProjectKB_Class20055] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "funcalls")
+	(property_list [ProClojure_ProjectKB_Class20056])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceFieldWidget")
+	(width 200)
+	(x 0)
+	(y 180))
+
+([ProClojure_ProjectKB_Class20056] of  Property_List
+
+	(properties
+		[ProClojure_ProjectKB_Class20057]
+		[ProClojure_ProjectKB_Class20058]))
+
+([ProClojure_ProjectKB_Class20057] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([ProClojure_ProjectKB_Class20058] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([ProClojure_ProjectKB_Class20059] of  Widget
+
+	(height 310)
+	(is_hidden FALSE)
+	(name "funcalls")
+	(property_list [ProClojure_ProjectKB_Class20060])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceListWidget")
+	(width 310)
+	(x 0)
+	(y 60))
+
+([ProClojure_ProjectKB_Class20060] of  Property_List
+
+	(properties
+		[ProClojure_ProjectKB_Class20061]
+		[ProClojure_ProjectKB_Class20062]))
+
+([ProClojure_ProjectKB_Class20061] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([ProClojure_ProjectKB_Class20062] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([ProClojure_ProjectKB_Class20063] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "result-variable")
+	(property_list [ProClojure_ProjectKB_Class20064])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 200)
+	(x 0)
+	(y 370))
+
+([ProClojure_ProjectKB_Class20064] of  Property_List
+)
+
+([ProClojure_ProjectKB_Class20065] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "title")
+	(property_list [ProClojure_ProjectKB_Class20066])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 200)
+	(x 0)
+	(y 0))
+
+([ProClojure_ProjectKB_Class20066] of  Property_List
+)
+
+([ProClojure_ProjectKB_Class20067] of  String
+
+	(name "tooltip_text"))
+
+([ProClojure_ProjectKB_Class20068] of  Property_List
+
+	(name ":Visible:Slot:List")
+	(properties
+		[ProClojure_ProjectKB_Class20072]
+		[ProClojure_ProjectKB_Class20076]))
+
+([ProClojure_ProjectKB_Class20069] of  String
+
+	(name ":COLUMN:NAME:DESCRIPTORvalue")
+	(string_value "value"))
+
+([ProClojure_ProjectKB_Class20070] of  Integer
+
+	(integer_value -16777216)
+	(name ":COLOR:RGB:DESCRIPTORvalue"))
+
+([ProClojure_ProjectKB_Class20071] of  Integer
+
+	(integer_value 21)
+	(name ":PREFERRED:SIZE:DESCRIPTORvalue"))
+
+([ProClojure_ProjectKB_Class20072] of  String
+
+	(name "value")
+	(string_value "value"))
+
+([ProClojure_ProjectKB_Class20073] of  String
+
+	(name ":COLUMN:NAME:DESCRIPTORN")
+	(string_value "N"))
+
+([ProClojure_ProjectKB_Class20074] of  Integer
+
+	(integer_value -16777216)
+	(name ":COLOR:RGB:DESCRIPTORN"))
+
+([ProClojure_ProjectKB_Class20075] of  Integer
+
+	(integer_value 318)
+	(name ":PREFERRED:SIZE:DESCRIPTORN"))
+
+([ProClojure_ProjectKB_Class20076] of  String
+
+	(name "N")
+	(string_value "N"))
+
+([ProClojure_ProjectKB_Class20077] of  Integer
+
+	(integer_value 2)
+	(name ":Number:Of:Visible:Slots"))
+
+([ProClojure_ProjectKB_Class20078] of  String
+
+	(name ":Visible:Slot:Index0")
+	(string_value "N"))
+
+([ProClojure_ProjectKB_Class20079] of  String
+
+	(name ":Visible:Slot:Index1")
+	(string_value "value"))
+
+([ProClojure_ProjectKB_Class20080] of  Boolean
+
+	(boolean_value FALSE)
+	(name ":Automatically:Select:Insertions"))
+
+([ProClojure_ProjectKB_Class20081] of  Boolean
+
+	(boolean_value TRUE)
+	(name ":Create:Form:For:New:Instances"))
+
+([ProClojure_ProjectKB_Class20082] of  Boolean
+
+	(boolean_value TRUE)
+	(name ":HighLight:Selected:Row"))
+
+([ProClojure_ProjectKB_Class20083] of  Boolean
+
+	(boolean_value FALSE)
+	(name ":Edit:In:Place"))
+
+([ProClojure_ProjectKB_Class20084] of  Boolean
+
+	(boolean_value FALSE)
+	(name ":Use:Dialog:To:Select:Instances"))
+
+([ProClojure_ProjectKB_Class20085] of  Boolean
+
+	(boolean_value TRUE)
+	(name ":Use:Dialog:To:Select:Classes"))
+
+([ProClojure_ProjectKB_Class20086] of  String
+
+	(name ":Dialog:Title:For:Selecting:Instances")
+	(string_value "Select an instance"))
+
+([ProClojure_ProjectKB_Class20087] of  String
+
+	(name ":Dialog:Title:For:Selecting:Classes")
+	(string_value "Select a class"))
+
+([ProClojure_ProjectKB_Class20088] of  Integer
+
+	(integer_value 1)
+	(name ":Prototype:Depth"))
+
+([ProClojure_ProjectKB_Class20089] of  Boolean
+
+	(boolean_value TRUE)
+	(name ":Display:Create:Instance:Button"))
+
+([ProClojure_ProjectKB_Class20090] of  Boolean
+
+	(boolean_value TRUE)
+	(name ":Display:Add:Instance:Button"))
+
+([ProClojure_ProjectKB_Class20091] of  Boolean
+
+	(boolean_value TRUE)
+	(name ":Display:View:Instance:Button"))
+
+([ProClojure_ProjectKB_Class20092] of  Boolean
+
+	(boolean_value TRUE)
+	(name ":Display:Remove:Instance:Button"))
+
+([ProClojure_ProjectKB_Class20093] of  Boolean
+
+	(boolean_value FALSE)
+	(name ":Display:Delete:Instance:Button"))
+
+([ProClojure_ProjectKB_Class20094] of  Boolean
+
+	(boolean_value FALSE)
+	(name ":Display:Prototype:Button"))
+
+([ProClojure_ProjectKB_Class20095] of  Boolean
+
+	(boolean_value FALSE)
+	(name ":Display:Move:Instance:Buttons"))
+
+([ProClojure_ProjectKB_Class20096] of  String
+
+	(name ":Create:Instance:Button:Tooltip")
+	(string_value "Create a new instance"))
+
+([ProClojure_ProjectKB_Class20097] of  String
+
+	(name ":Add:Instance:Button:Tooltip")
+	(string_value "Select an already existing instance"))
+
+([ProClojure_ProjectKB_Class20098] of  String
+
+	(name ":View:Instance:Button:Tooltip")
+	(string_value "View the selected instance"))
+
+([ProClojure_ProjectKB_Class20099] of  String
+
+	(name ":Remove:Instance:Button:Tooltip")
+	(string_value "Remove the selected instance(s)"))
+
+([ProClojure_ProjectKB_Class20100] of  String
+
+	(name ":Delete:Instance:Button:Tooltip")
+	(string_value "Delete the selected instance(s) from the knowledge base"))
+
+([ProClojure_ProjectKB_Class20101] of  String
+
+	(name ":Prototype:Button:Tooltip")
+	(string_value "Create a new instance which is a duplicate of the selected instance"))
+
+([ProClojure_ProjectKB_Class20102] of  String
+
+	(name ":Move:Instance:Buttons:Tooltip")
+	(string_value "Move the selected instance"))
+
+([ProClojure_ProjectKB_Class20103] of  String
+
+	(name ":Create:Instance:Dialog:Title")
+	(string_value "Create a new instance"))
+
+([ProClojure_ProjectKB_Class20104] of  String
+
+	(name ":Add:Instance:Dialog:Title")
+	(string_value "Select an already existing instance"))
+
+([ProClojure_ProjectKB_Class20105] of  Property_List
+
+	(name ":Visible:Slot:List")
+	(properties
+		[ProClojure_ProjectKB_Class20106]
+		[ProClojure_ProjectKB_Class20107]))
+
+([ProClojure_ProjectKB_Class20106] of  String
+
+	(name "value")
+	(string_value "value"))
+
+([ProClojure_ProjectKB_Class20107] of  String
+
+	(name "N")
+	(string_value "N"))
+
+([ProClojure_ProjectKB_Class20108] of  String
+
+	(name ":Visible:Slot:Index0")
+	(string_value "N"))
+
+([ProClojure_ProjectKB_Class20109] of  String
+
+	(name ":Visible:Slot:Index1")
+	(string_value "value"))
+
+([ProClojure_ProjectKB_Class20110] of  Property_List
+
+	(name ":Visible:Slot:List")
+	(properties
+		[ProClojure_ProjectKB_Class20111]
+		[ProClojure_ProjectKB_Class20112]))
+
+([ProClojure_ProjectKB_Class20111] of  String
+
+	(name "value")
+	(string_value "value"))
+
+([ProClojure_ProjectKB_Class20112] of  String
+
+	(name "N")
+	(string_value "N"))
+
+([ProClojure_ProjectKB_Class20113] of  String
+
+	(name ":Visible:Slot:Index0")
+	(string_value "N"))
+
+([ProClojure_ProjectKB_Class20114] of  String
+
+	(name ":Visible:Slot:Index1")
+	(string_value "value"))
+
+([ProClojure_ProjectKB_Class20115] of  Property_List
+
+	(name ":Visible:Slot:List")
+	(properties
+		[ProClojure_ProjectKB_Class20116]
+		[ProClojure_ProjectKB_Class20117]))
+
+([ProClojure_ProjectKB_Class20116] of  String
+
+	(name "value")
+	(string_value "value"))
+
+([ProClojure_ProjectKB_Class20117] of  String
+
+	(name "N")
+	(string_value "N"))
+
+([ProClojure_ProjectKB_Class20118] of  String
+
+	(name ":Visible:Slot:Index0")
+	(string_value "N"))
+
+([ProClojure_ProjectKB_Class20119] of  String
+
+	(name ":Visible:Slot:Index1")
+	(string_value "value"))
+
+([ProClojure_ProjectKB_Class20120] of  Property_List
+
+	(name ":Visible:Slot:List")
+	(properties
+		[ProClojure_ProjectKB_Class20121]
+		[ProClojure_ProjectKB_Class20122]))
+
+([ProClojure_ProjectKB_Class20121] of  String
+
+	(name "value")
+	(string_value "value"))
+
+([ProClojure_ProjectKB_Class20122] of  String
+
+	(name "N")
+	(string_value "N"))
+
+([ProClojure_ProjectKB_Class20123] of  String
+
+	(name ":Visible:Slot:Index0")
+	(string_value "N"))
+
+([ProClojure_ProjectKB_Class20124] of  String
+
+	(name ":Visible:Slot:Index1")
+	(string_value "value"))
+
+([ProClojure_ProjectKB_Class20125] of  Property_List
+
+	(name ":Visible:Slot:List")
+	(properties
+		[ProClojure_ProjectKB_Class20126]
+		[ProClojure_ProjectKB_Class20127]))
+
+([ProClojure_ProjectKB_Class20126] of  String
+
+	(name "value")
+	(string_value "value"))
+
+([ProClojure_ProjectKB_Class20127] of  String
+
+	(name "N")
+	(string_value "N"))
+
+([ProClojure_ProjectKB_Class20128] of  String
+
+	(name ":Visible:Slot:Index0")
+	(string_value "N"))
+
+([ProClojure_ProjectKB_Class20129] of  String
+
+	(name ":Visible:Slot:Index1")
+	(string_value "value"))
+
+([ProClojure_ProjectKB_Class20130] of  Property_List
+
+	(name ":Visible:Slot:List")
+	(properties
+		[ProClojure_ProjectKB_Class20131]
+		[ProClojure_ProjectKB_Class20132]))
+
+([ProClojure_ProjectKB_Class20131] of  String
+
+	(name "value")
+	(string_value "value"))
+
+([ProClojure_ProjectKB_Class20132] of  String
+
+	(name "N")
+	(string_value "N"))
+
+([ProClojure_ProjectKB_Class20133] of  String
+
+	(name ":Visible:Slot:Index0")
+	(string_value "N"))
+
+([ProClojure_ProjectKB_Class20134] of  String
+
+	(name ":Visible:Slot:Index1")
+	(string_value "value"))
+
+([ProClojure_ProjectKB_Class20135] of  Property_List
+
+	(name ":Visible:Slot:List")
+	(properties
+		[ProClojure_ProjectKB_Class20136]
+		[ProClojure_ProjectKB_Class20137]))
+
+([ProClojure_ProjectKB_Class20136] of  String
+
+	(name "value")
+	(string_value "value"))
+
+([ProClojure_ProjectKB_Class20137] of  String
+
+	(name "N")
+	(string_value "N"))
+
+([ProClojure_ProjectKB_Class20138] of  String
+
+	(name ":Visible:Slot:Index0")
+	(string_value "N"))
+
+([ProClojure_ProjectKB_Class20139] of  String
+
+	(name ":Visible:Slot:Index1")
+	(string_value "value"))
+
+([ProClojure_ProjectKB_Class20158] of  String
+
+	(name "WorkingPrograms")
+	(string_value "title"))
+
+([ProClojure_ProjectKB_Class20159] of  String
+
+	(name "CloFunction")
+	(string_value "title"))
+
+([ProClojure_ProjectKB_Class20160] of  String
+
+	(name "CloExtendType")
+	(string_value "title"))
+
+([ProClojure_ProjectKB_Class20161] of  String
+
+	(name "CloRecord")
+	(string_value "title"))
+
+([ProClojure_ProjectKB_Class20162] of  String
+
+	(name "CloProgram")
+	(string_value "title"))
+
+([ProClojure_ProjectKB_Class20163] of  String
+
+	(name "CloProtocol")
+	(string_value "title"))
+
+([ProClojure_ProjectKB_Class20164] of  String
+
+	(name "CloFuncall")
+	(string_value "source"))
+
+([ProClojure_ProjectKB_Class20165] of  String
+
+	(name "Funcall")
+	(string_value "function{+}arguments"))
+
+([ProClojure_ProjectKB_Class20166] of  String
 
 	(name "CloVar")
 	(string_value "title"))
 
-([ProClojure_ProjectKB_Class12] of  String
+([ProClojure_ProjectKB_Class20167] of  String
 
 	(name "CloMacro")
 	(string_value "title"))
 
-([ProClojure_ProjectKB_Class13] of  String
+([ProClojure_ProjectKB_Class20168] of  String
 
 	(name "CloNamespace")
 	(string_value "title"))
 
-([ProClojure_ProjectKB_Class14] of  String
+([ProClojure_ProjectKB_Class20169] of  String
 
 	(name ":META-CLASS")
 	(string_value "%3ANAME"))
 
-([ProClojure_ProjectKB_Class15] of  String
+([ProClojure_ProjectKB_Class20170] of  String
 
 	(name "CloDocumentation")
 	(string_value "title"))
 
-([ProClojure_ProjectKB_Class16] of  String
+([ProClojure_ProjectKB_Class20171] of  String
+
+	(name "Envalue")
+	(string_value "N{+}value"))
+
+([ProClojure_ProjectKB_Class20172] of  String
 
 	(name "CloExtendProtocol")
 	(string_value "title"))
 
-([ProClojure_ProjectKB_Class17] of  Map_Entry
+([ProClojure_ProjectKB_Class20173] of  Map_Entry
 
 	(key "suppress_instance_counting")
 	(key_class "java.lang.String")
 	(value "false")
 	(value_class "java.lang.String"))
 
-([ProClojure_ProjectKB_Class18] of  Map_Entry
+([ProClojure_ProjectKB_Class20174] of  Map_Entry
 
 	(key "add_name_on_instance_form")
 	(key_class "java.lang.String")
 	(value "false")
 	(value_class "java.lang.String"))
 
-([ProClojure_ProjectKB_Class19] of  Map_Entry
+([ProClojure_ProjectKB_Class20175] of  Map_Entry
 
 	(key "change_tracking_active")
 	(key_class "java.lang.String")
 	(value "false")
 	(value_class "java.lang.String"))
-
-([ProClojure_ProjectKB_Class4] of  String
-
-	(name "WorkingPrograms")
-	(string_value "title"))
-
-([ProClojure_ProjectKB_Class5] of  String
-
-	(name "CloFunction")
-	(string_value "title"))
-
-([ProClojure_ProjectKB_Class6] of  String
-
-	(name "CloExtendType")
-	(string_value "title"))
-
-([ProClojure_ProjectKB_Class7] of  String
-
-	(name "CloRecord")
-	(string_value "title"))
-
-([ProClojure_ProjectKB_Class8] of  String
-
-	(name "CloProgram")
-	(string_value "title"))
-
-([ProClojure_ProjectKB_Class9] of  String
-
-	(name "CloProtocol")
-	(string_value "title"))
 
 ([PROJECT] of  Project
 
@@ -1441,14 +2162,17 @@
 		[STANDARD_SLOT_FORM_WIDGET]
 		[Clojure_ProjectKB_Class30012]
 		[Clojure_ProjectKB_Class14565]
+		[ProClojure_ProjectKB_Class20014]
 		[Clojure_ProjectKB_Class14558]
 		[INSTANCE_ANNOTATION_FORM_WIDGET]
 		[Clojure_ProjectKB_Class4]
 		[STANDARD_FACET_FORM_WIDGET]
 		[PAL_FORM_WIDGET]
 		[Clojure_ProjectKB_Class14551]
+		[ProClojure_ProjectKB_Class20011]
 		[Clojure_ProjectKB_Class30004]
 		[Clojure_ProjectKB_Class40024]
+		[ProClojure_ProjectKB_Class20004]
 		[Clojure_ProjectKB_Class50045])
 	(default_cls_metaclass ":STANDARD-CLASS")
 	(default_facet_metaclass ":STANDARD-FACET")

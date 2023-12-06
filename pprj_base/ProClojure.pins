@@ -1,4 +1,4 @@
-; Mon Dec 04 17:47:39 MSK 2023
+; Wed Dec 06 17:02:07 MSK 2023
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -417,3 +417,26 @@
 
 	(source "ProgramGenerator/FILE_SEPARATOR")
 	(title "SEP"))
+
+([ProClojure_Class20012] of  CloProgram
+
+	(cloFunctions
+		[ProClojure_Class20014]
+		[ProClojure_Class20015])
+	(cloNamespace [ProClojure_Class20013])
+	(title "Evaluator"))
+
+([ProClojure_Class20013] of  CloNamespace
+
+	(source "(:use \n  protege.core)")
+	(title "eva"))
+
+([ProClojure_Class20014] of  CloFunction
+
+	(source "(loop [aa args ss \"\"]\n  (if (seq aa) \n    (let [evv (vec envals)\n           v (sv (evv (dec (first aa))) \"value\")]\n      (recur (rest aa) (str ss \" \" v)))\n    ss))")
+	(title "envalue-n [args envals]"))
+
+([ProClojure_Class20015] of  CloFunction
+
+	(source "(let [mp (into {} hm)\n       func (first (selection mp \"funcalls\"))\n       evs (mp \"envalues\")\n       rvar (mp \"result-variable\")]\n  (if func\n    (let [fun (sv func \"function\")\n           refs (.getReferences fun)\n           frms (map #(.getFrame %) refs)\n           is-prg? #(= (.getDirectType %) (cls \"CloProgram\"))\n           prg (first (filter is-prg? frms))\n           nsi (sv prg \"cloNamespace\")\n           nsn (sv nsi \"title\")\n           ftit (sv fun \"title\")\n           fnm (first (.split ftit \"\\\\[\"))\n           args (read-string (sv func \"arguments\"))\n           args (envalue-n args evs)\n           fc (str \"(\" nsn \"/\" fnm args \")\")\n           _ (println :EVAL fc)\n           r (eval (read-string fc))]\n      (if (not (empty? rvar))\n        (eval (list 'def (symbol rvar) r)))\n      r)))")
+	(title "eval-func [hm inst]"))
