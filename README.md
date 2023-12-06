@@ -2,7 +2,7 @@
 Simple Clojure/ClojureScript IDE based on:
 
 1. Protege 3.5 ontology editor [https://protegewiki.stanford.edu/wiki/Protege_Desktop_Old_Versions](https://protegewiki.stanford.edu/wiki/Protege_Desktop_Old_Versions)
-2, Clojure Tab plugin [https://protegewiki.stanford.edu/wiki/ClojureTab](https://protegewiki.stanford.edu/wiki/ClojureTab)
+2. Clojure Tab plugin [https://protegewiki.stanford.edu/wiki/ClojureTab](https://protegewiki.stanford.edu/wiki/ClojureTab)
 3. Figwheel Main ClojureScript library [https://github.com/bhauman/figwheel-main](https://github.com/bhauman/figwheel-main)
 
 ## Start with CLI tools
