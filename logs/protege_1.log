@@ -1,0 +1,50 @@
+2023.12.01 18:38:18.246 MSK INFO: *** SYSTEM START ***
+2023.12.01 18:38:19.174 MSK WARNING: missing bundle: protege_text -- BundleHelper.<init>()
+2023.12.01 18:41:17.626 MSK INFO: Load time for file:/home/ru/clojure/pro-figwheel/pprj_base/Figwheel.pprj = 0 sec (project) + 1 sec (ui) -- ProjectManager$3.run()
+2023.12.03 19:47:35.763 MSK INFO: *** SYSTEM START ***
+2023.12.03 19:47:35.951 MSK WARNING: missing bundle: protege_text -- BundleHelper.<init>()
+2023.12.03 19:47:45.864 MSK INFO: Load time for file:/home/ru/clojure/pro-figwheel/pprj_apps/Hello%20World.pprj = 0 sec (project) + 4 sec (ui) -- ProjectManager$3.run()
+2023.12.03 21:10:11.528 MSK INFO: *** SYSTEM START ***
+2023.12.03 21:10:11.717 MSK WARNING: missing bundle: protege_text -- BundleHelper.<init>()
+2023.12.03 21:10:17.452 MSK INFO: Load time for file:/home/ru/clojure/pro-figwheel/pprj_base/Figwheel.pprj = 0 sec (project) + 0 sec (ui) -- ProjectManager$3.run()
+2023.12.04 13:44:35.655 MSK INFO: *** SYSTEM START ***
+2023.12.04 13:44:35.863 MSK WARNING: missing bundle: protege_text -- BundleHelper.<init>()
+2023.12.04 13:44:42.185 MSK INFO: Load time for file:/home/ru/clojure/pro-figwheel/pprj_base/ProClojure.pprj = 0 sec (project) + 0 sec (ui) -- ProjectManager$3.run()
+2023.12.04 14:06:48.556 MSK INFO: Project load time for file:/home/ru/clojure/pro-figwheel/pprj_base/Figwheel.pprj: 0 sec -- ProjectChooser.loadProject()
+2023.12.04 14:06:48.760 MSK INFO: UI display time = 0 sec -- ProjectManager$2.run()
+2023.12.05 14:23:19.287 MSK INFO: *** SYSTEM START ***
+2023.12.05 14:23:19.305 MSK WARNING: Plugins directory not found: /home/ru/clojure/pro-figwheel/plugins -- PluginUtilities.findPluginsDirectory()
+2023.12.05 14:23:19.381 MSK WARNING: missing bundle: standard_extensions_text -- BundleHelper.<init>()
+2023.12.05 14:23:19.383 MSK WARNING: no resource bundle: tab.queries -- BundleHelper.internalGetText()
+2023.12.05 14:25:23.347 MSK INFO: *** SYSTEM START ***
+2023.12.05 14:25:23.356 MSK WARNING: Plugins directory not found: /home/ru/clojure/pro-figwheel/plugins -- PluginUtilities.findPluginsDirectory()
+2023.12.05 14:25:23.439 MSK WARNING: missing bundle: standard_extensions_text -- BundleHelper.<init>()
+2023.12.05 14:25:23.441 MSK WARNING: no resource bundle: tab.queries -- BundleHelper.internalGetText()
+2023.12.05 14:36:45.280 MSK INFO: *** SYSTEM START ***
+2023.12.05 14:36:45.288 MSK WARNING: Plugins directory not found: /home/ru/clojure/pro-figwheel/plugins -- PluginUtilities.findPluginsDirectory()
+2023.12.05 14:36:45.375 MSK WARNING: missing bundle: standard_extensions_text -- BundleHelper.<init>()
+2023.12.05 14:36:45.377 MSK WARNING: no resource bundle: tab.queries -- BundleHelper.internalGetText()
+2023.12.05 16:08:32.731 MSK INFO: *** SYSTEM START ***
+2023.12.05 16:08:32.738 MSK WARNING: Plugins directory not found: /home/ru/clojure/pro-figwheel/plugins -- PluginUtilities.findPluginsDirectory()
+2023.12.05 16:08:32.825 MSK WARNING: missing bundle: standard_extensions_text -- BundleHelper.<init>()
+2023.12.05 16:08:32.827 MSK WARNING: no resource bundle: tab.queries -- BundleHelper.internalGetText()
+2023.12.05 16:14:36.974 MSK INFO: *** SYSTEM START ***
+2023.12.05 16:14:36.983 MSK WARNING: Plugins directory not found: /home/ru/clojure/pro-figwheel/plugins -- PluginUtilities.findPluginsDirectory()
+2023.12.05 16:14:37.067 MSK WARNING: missing bundle: standard_extensions_text -- BundleHelper.<init>()
+2023.12.05 16:14:37.069 MSK WARNING: no resource bundle: tab.queries -- BundleHelper.internalGetText()
+2023.12.05 16:15:30.078 MSK INFO: *** SYSTEM START ***
+2023.12.05 16:15:30.085 MSK WARNING: Plugins directory not found: /home/ru/clojure/pro-figwheel/plugins -- PluginUtilities.findPluginsDirectory()
+2023.12.05 16:15:30.167 MSK WARNING: missing bundle: standard_extensions_text -- BundleHelper.<init>()
+2023.12.05 16:15:30.169 MSK WARNING: no resource bundle: tab.queries -- BundleHelper.internalGetText()
+2023.12.05 16:17:27.325 MSK INFO: *** SYSTEM START ***
+2023.12.05 16:17:27.334 MSK WARNING: Plugins directory not found: /home/ru/clojure/pro-figwheel/plugins -- PluginUtilities.findPluginsDirectory()
+2023.12.05 16:17:27.417 MSK WARNING: missing bundle: standard_extensions_text -- BundleHelper.<init>()
+2023.12.05 16:17:27.418 MSK WARNING: no resource bundle: tab.queries -- BundleHelper.internalGetText()
+2023.12.05 16:19:31.231 MSK INFO: *** SYSTEM START ***
+2023.12.05 16:19:31.240 MSK WARNING: Plugins directory not found: /home/ru/clojure/pro-figwheel/plugins -- PluginUtilities.findPluginsDirectory()
+2023.12.05 16:19:31.326 MSK WARNING: missing bundle: standard_extensions_text -- BundleHelper.<init>()
+2023.12.05 16:19:31.328 MSK WARNING: no resource bundle: tab.queries -- BundleHelper.internalGetText()
+2023.12.05 16:23:08.617 MSK INFO: *** SYSTEM START ***
+2023.12.05 16:23:08.625 MSK WARNING: Plugins directory not found: /home/ru/clojure/pro-figwheel/plugins -- PluginUtilities.findPluginsDirectory()
+2023.12.05 16:23:08.704 MSK WARNING: missing bundle: standard_extensions_text -- BundleHelper.<init>()
+2023.12.05 16:23:08.707 MSK WARNING: no resource bundle: tab.queries -- BundleHelper.internalGetText()

@@ -1,0 +1,141 @@
+; Mon Dec 04 17:25:25 MSK 2023
+; 
+;+ (version "3.5")
+;+ (build "Build 663")
+
+
+(defclass %3ACLIPS_TOP_LEVEL_SLOT_CLASS "Fake class to save top-level slot information"
+	(is-a USER)
+	(role abstract)
+	(single-slot cljs-program
+		(type INSTANCE)
+;+		(allowed-classes CljsProgram)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot css
+		(type INSTANCE)
+;+		(allowed-classes CSS)
+		(create-accessor read-write))
+	(single-slot butt-save
+		(type STRING)
+;+		(value "save/support.figwheel/save")
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot butt-stop
+		(type STRING)
+;+		(value "stop/support.figwheel/stop-fig")
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot save-in
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot epilogue
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot butt-start
+		(type STRING)
+;+		(value "start/support.figwheel/start-fig")
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot html
+		(type INSTANCE)
+;+		(allowed-classes HTML)
+		(create-accessor read-write))
+	(single-slot butt-save-html
+		(type STRING)
+;+		(value "save HTML/support.figwheel/save-html")
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot butt-save-css
+		(type STRING)
+;+		(value "save CSS/support.figwheel/save-css")
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass CljsProgram
+	(is-a CloProgram)
+	(role concrete)
+	(single-slot butt-save
+		(type STRING)
+;+		(value "save/support.figwheel/save")
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot epilogue
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot html
+		(type INSTANCE)
+;+		(allowed-classes HTML)
+		(create-accessor read-write))
+	(multislot css
+		(type INSTANCE)
+;+		(allowed-classes CSS)
+		(create-accessor read-write)))
+
+(defclass FigwheelController
+	(is-a USER)
+	(role concrete)
+	(single-slot butt-start
+		(type STRING)
+;+		(value "start/support.figwheel/start-fig")
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot title
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot butt-stop
+		(type STRING)
+;+		(value "stop/support.figwheel/stop-fig")
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot cljs-program
+		(type INSTANCE)
+;+		(allowed-classes CljsProgram)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass HTML
+	(is-a USER)
+	(role concrete)
+	(single-slot source
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot title
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot butt-save-html
+		(type STRING)
+;+		(value "save HTML/support.figwheel/save-html")
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot save-in
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass CSS
+	(is-a USER)
+	(role concrete)
+	(single-slot source
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot title
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot butt-save-css
+		(type STRING)
+;+		(value "save CSS/support.figwheel/save-css")
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot save-in
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))

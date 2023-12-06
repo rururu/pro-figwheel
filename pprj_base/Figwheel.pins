@@ -1,0 +1,62 @@
+; Mon Dec 04 17:25:25 MSK 2023
+; 
+;+ (version "3.5")
+;+ (build "Build 663")
+
+([Figwheel_Class0] of  CloProgram
+
+	(cloFunctions
+		[Figwheel_Class2]
+		[Figwheel_Class3]
+		[Figwheel_Class10002]
+		[Figwheel_Class10000]
+		[Figwheel_Class20006]
+		[Figwheel_Class20007])
+	(cloNamespace [Figwheel_Class1])
+	(title "Figwheel Support"))
+
+([Figwheel_Class1] of  CloNamespace
+
+	(source "(:use protege.core)\n(:require\n  [figwheel.main.api :as fapi])\n(:import\n  java.io.FileWriter\n  clojuretab.ProgramGenerator)")
+	(title "support.figwheel"))
+
+([Figwheel_Class10000] of  CloFunction
+
+	(source "(let [tit (sv inst \"title\")\n       src (sv inst \"source\")\n       sin (sv inst \"save-in\")\n       _ (chk&mk-folder sin)\n       fwr (FileWriter. (str sin SEP tit ext))]\n  (.write fwr src)\n  (.close fwr))")
+	(title "save-asset [inst ext]"))
+
+([Figwheel_Class10002] of  CloFunction
+
+	(source "(let [save-in \"src/cljs\"\n       epi (sv inst \"epilogue\")\n       nsi (sv inst \"cloNamespace\")\n       nss (sv nsi \"title\")\n       [nam nsf] (ns-folder-and-name nss)\n       pgr (ProgramGenerator. inst)\n       _ (chk&mk-folder (str save-in SEP nsf))\n       fwr (FileWriter. (str save-in SEP nsf SEP nam \".cljs\"))]\n  (.generateProgram pgr fwr)\n  (if (not (empty? epi))\n    (.write fwr (str \"\\n\" epi)))\n  (.close fwr))")
+	(title "save [hm inst]"))
+
+([Figwheel_Class2] of  CloFunction
+
+	(source "([hm inst]\n  (let [prg (sv inst \"cljs-program\")\n         ns (sv prg \"cloNamespace\")\n         main (symbol (sv ns \"title\"))]\n    (start-fig main)))\n([main]\n  (invoke-later\n    (fapi/start {:id \"dev\"\n                      :options {:main main}\n                      :config {:watch-dirs [\"src/cljs\"]\n                                   :css-dirs [\"resources/public/css\"]\n                                   :mode :serve}})))")
+	(title "start-fig"))
+
+([Figwheel_Class20006] of  CloFunction
+
+	(source "(save-asset inst \".html\")")
+	(title "save-html [hm inst]"))
+
+([Figwheel_Class20007] of  CloFunction
+
+	(source "(save-asset inst \".css\")")
+	(title "save-css [hm inst]"))
+
+([Figwheel_Class20008] of  CloProgram
+
+	(cloFunctions [Figwheel_Class20010])
+	(cloNamespace [Clojure_Class300001])
+	(title "CW"))
+
+([Figwheel_Class20010] of  CloFunction
+
+	(source "(println \"Loading Clojure Program \\\"Figwheel Support\\\" = \"\n  (ClojureTab/loadProgram (fifos \"CloProgram\" \"title\" \"Figwheel Support\")))\n(.show *prj* (foc \"FigwheelController\" \"title\" \"FigwheelController\"))")
+	(title "clojure-work []"))
+
+([Figwheel_Class3] of  CloFunction
+
+	(source "(fapi/stop \"dev\")")
+	(title "stop-fig [hm inst]"))

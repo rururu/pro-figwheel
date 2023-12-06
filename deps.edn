@@ -1,0 +1,19 @@
+;; This file is only needed when using Clojure CLI Tools
+{:deps {org.clojure/clojure {:mvn/version "1.11.1"}
+        org.clojure/clojurescript {:mvn/version "1.10.773"}
+        com.bhauman/figwheel-main {:mvn/version "0.2.6"}
+        com.bhauman/rebel-readline-cljs {:mvn/version "0.1.4"}
+        protege/protege {:local/root "lib/protege-3.5.0.jar"}
+        protege/standard-extensions {:local/root "lib/standard-extensions-3.5.0.jar"}
+        protege/looks {:local/root "lib/looks-3.5.0.jar"}
+        protege/unicode_panel {:local/root "lib/unicode_panel-3.5.0.jar"}
+        protege/JGo {:local/root "lib/JGo-3.5.0.jar"}
+        protege/JGoLayout {:local/root "lib/JGoLayout-3.5.0.jar"}
+        protege/ClojureTab {:local/root "lib/ClojureTab-1.5.jar"}
+        protege/ProtegeExtensions {:local/root "lib/ProtegeExtensions.jar"}
+        http-kit/http-kit {:mvn/version "2.8.0-beta3"}
+        compojure/compojure {:mvn/version "1.7.0"}
+        cljs-ajax/cljs-ajax {:mvn/version "0.8.4"}}
+ :aliases {:pro {:main-opts ["-m" "pro-figwheel.main"]}
+           :fig {:main-opts ["-m" "figwheel.main"]}}
+ :paths ["src" "src/clojure" "classes" "src/cljs" "resources" "target"]}
