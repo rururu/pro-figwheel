@@ -1,4 +1,4 @@
 (ns hello.world
 )
 
-(js/alert "Hello evil world!")
+(js/alert "Hello cruel world!")

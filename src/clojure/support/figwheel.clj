@@ -5,7 +5,6 @@
 (:import
   java.io.FileWriter
   clojuretab.ProgramGenerator))
-
 (defn start-fig
   ([hm inst]
   (let [prg (sv inst "cljs-program")

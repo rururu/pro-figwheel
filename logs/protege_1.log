@@ -48,3 +48,7 @@
 2023.12.05 16:23:08.625 MSK WARNING: Plugins directory not found: /home/ru/clojure/pro-figwheel/plugins -- PluginUtilities.findPluginsDirectory()
 2023.12.05 16:23:08.704 MSK WARNING: missing bundle: standard_extensions_text -- BundleHelper.<init>()
 2023.12.05 16:23:08.707 MSK WARNING: no resource bundle: tab.queries -- BundleHelper.internalGetText()
+2023.12.07 18:39:27.395 MSK INFO: *** SYSTEM START ***
+2023.12.07 18:39:28.096 MSK WARNING: missing bundle: protege_text -- BundleHelper.<init>()
+2023.12.07 18:40:00.379 MSK INFO: Project load time for file:/home/ru/clojure/pro-figwheel/pprj_apps/HelloWorld.pprj: 1 sec -- ProjectChooser.loadProject()
+2023.12.07 18:40:10.513 MSK INFO: UI display time = 10 sec -- ProjectManager$2.run()
