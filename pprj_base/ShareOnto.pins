@@ -1,0 +1,334 @@
+; Mon Oct 16 13:05:20 MSK 2023
+; 
+;+ (version "3.5")
+;+ (build "Build 663")
+
+([ShareOnto_Class0] of  CloFunction
+
+	(source "(if KB2\n  (let [mp (into {} hm)\n         inss (DisplayUtilities/pickInstances nil KB2 [(.getCls KB2 \":THING\")])]\n    (doseq [in inss]\n      (copy-instance in KB2 KB1 false)))\n  (if (confirm \"Load Source Project!\")\n    (load-src-prj hm inst)))")
+	(title "shal-copy [hm inst]"))
+
+([ShareOnto_Class1] of  CloFunction
+
+	(source "(= (JOptionPane/showConfirmDialog nil mes) (JOptionPane/YES_OPTION))")
+	(title "confirm [mes]"))
+
+([ShareOnto_Class10000] of  CloFunction
+
+	(source "(cond\n  (not deep)\n    (if (not (or (instance? Cls v2) (instance? Instance v2)))\n              v2)\n  (instance? Cls v2)\n    (or (cls (.getName v2))\n      (do (println (str \"Copying Class \" (.getName v2) \" not exists!\"))\n        (def ERROR true)\n        nil))    \n  (instance? Instance v2)\n    (copy-instance v2 kb2 kb1 deep)\n  true\n    v2)")
+	(title "find-or-create-copy [v2 kb2 kb1 deep]"))
+
+([ShareOnto_Class100001] of  CloProgram
+
+	(cloFunctions
+		[ShareOnto_Class100006]
+		[ShareOnto_Class100007]
+		[ShareOnto_Class100008]
+		[ShareOnto_Class100009]
+		[ShareOnto_Class100010])
+	(cloNamespace [ShareOnto_Class100002])
+	(cloVars
+		[ShareOnto_Class100003]
+		[ShareOnto_Class100004]
+		[ShareOnto_Class100005])
+	(title "Scenario check"))
+
+([ShareOnto_Class100002] of  CloNamespace
+
+	(source "(:use protege.core)\n(:import\n  edu.stanford.smi.protege.model.Instance)")
+	(title "scen.check"))
+
+([ShareOnto_Class100003] of  CloVar
+
+	(source "(volatile! [])")
+	(title "VARS"))
+
+([ShareOnto_Class100004] of  CloVar
+
+	(source "(volatile! [])")
+	(title "ALR-TASKS"))
+
+([ShareOnto_Class100005] of  CloVar
+
+	(source "(volatile! [])")
+	(title "ALR-ACTS"))
+
+([ShareOnto_Class100006] of  CloFunction
+
+	(source "(let [[a & aa] aa]\n  (when (and a (not (some #{a} @ALR-ACTS)))\n    (println :AOD (sv a \"title\"))\n    (vswap! ALR-ACTS conj a)\n    (fa a)\n    (if (has-typ a \"Decision\")\n      (walk-actions-decisions (svs a \"variants\") fa)\n      (walk-actions-decisions (svs a \"next_actions\") fa))\n    (walk-actions-decisions aa fa)))")
+	(title "walk-actions-decisions [aa fa]"))
+
+([ShareOnto_Class100007] of  CloFunction
+
+	(source "(let [[t & tt] tt]\n  (when (and t (not (some #{t} @ALR-TASKS)))\n    (println :TSK (sv t \"title\"))\n    (vswap! ALR-TASKS conj t)\n    (walk-actions-decisions (svs t \"initial_actions\") fa)\n    (if (has-typ t \"Decision\")\n      (walk-tasks (svs t \"variants\") fa)\n      (walk-tasks (svs t \"next_tasks\") fa))\n    (walk-tasks tt fa)))")
+	(title "walk-tasks [tt fa]"))
+
+([ShareOnto_Class100008] of  CloFunction
+
+	(source "(println :SCN (sv s \"title\"))\n(walk-tasks (svs s \"initial_tasks\") fa)")
+	(title "walk-scenario [s fa]"))
+
+([ShareOnto_Class100009] of  CloFunction
+
+	(source "(doseq [sl (.getTemplateSlots  (.getDirectType a))]\n  (let [sln (.getName sl)\n         slv (sv a sln)\n         val (cond \n                 (string? slv) \n                   slv\n                 (instance? Instance slv) \n                   (or (sv slv \"title\") (sv slv \"label\")))]\n    (when (and val \n               (.startsWith val \"?\") \n               (not (.startsWith val \"? \"))\n               (not (some #{val} @VARS)))\n      (println :VAR val)\n      (vswap! VARS conj val))))")
+	(title "collect-vars [a]"))
+
+([ShareOnto_Class100010] of  CloFunction
+
+	(source "([hm inst]\n  (if-let [s (some #{(sv inst \"scenario\")} (cls-instances \"Scenario\"))]\n     (do (check-scenario-vars s)\n       (ssvs inst \"variables1\" @VARS))\n     (ssvs inst \"variables1\" [\"Сценарий не найден!\"])))\n([s]\n  (vreset! VARS [])\n  (vreset! ALR-TASKS [])\n  (vreset! ALR-ACTS [])\n  (walk-scenario s collect-vars))")
+	(title "check-scenario-vars"))
+
+([ShareOnto_Class100014] of  ShareOnto
+
+	(but-check-scen-vars "Check Scenario Variables/scen.check/check-scenario-vars")
+	(but-deep-copy "Deep Copy Instance/share.onto/deep-copy")
+	(but-del-fil "Delete Filtered Instances/share.onto/delfil")
+	(but-del-unref "Delete Unreferenced/share.onto/delete-unref")
+	(but-find-unref "Find Unreferenced/share.onto/find-unref")
+	(but-load-prj "Load Source Project/share.onto/load-src-prj")
+	(but-shal-copy "Shallow Copy Instances/share.onto/shal-copy")
+	(scenario [ShareOnto_Class100014]))
+
+([ShareOnto_Class110001] of  CloFuncall
+
+	(source "(protege.core/invoke-later(share.onto/file-chooser  \"\"))"))
+
+([ShareOnto_Class110002] of  CloFuncall
+
+	(source "JFileChooser/APPROVE_OPTION"))
+
+([ShareOnto_Class110003] of  CloFuncall
+
+	(source "javax.swing.JFileChooser/APPROVE_OPTION"))
+
+([ShareOnto_Class110004] of  CloFuncall
+
+	(source "javax.swing.JFileChooser/ERROR_OPTION"))
+
+([ShareOnto_Class110005] of  CloFuncall
+
+	(source "(protege.core/invoke-later (share.onto/file-chooser  \"\"))"))
+
+([ShareOnto_Class110006] of  CloFuncall
+
+	(source "(protege.core/invoke-later (println (share.onto/file-chooser  \"\")))"))
+
+([ShareOnto_Class20000] of  CloFunction
+
+	(source "(if KB2\n  (let [mp (into {} hm)\n         inss (DisplayUtilities/pickInstances nil KB2 [(.getCls KB2 \":THING\")])]\n    (doseq [in inss]\n      (copy-instance in KB2 KB1 true)))\n  (if (confirm \"Load Source Project!\")\n    (load-src-prj hm inst)))")
+	(title "deep-copy [hm inst]"))
+
+([ShareOnto_Class20001] of  CloFunction
+
+	(source "(let [tit \"title\"\n       lab \"label\"]\n  (if-let [val (.getOwnSlotValue i (.getSlot kb2 tit))]\n    [tit val]\n    (if-let [val (.getOwnSlotValue i (.getSlot kb2 lab))]\n      [lab val])))")
+	(title "titorlab-slot-val [i kb2]"))
+
+([ShareOnto_Class3] of  CloProgram
+
+	(cloFunctions
+		[ShareOnto_Class1]
+		[ShareOnto_Class5]
+		[ShareOnto_Class20001]
+		[ShareOnto_Class10000]
+		[ShareOnto_Class40042]
+		[ShareOnto_Class40000]
+		[ShareOnto_Class6]
+		[ShareOnto_Class30002]
+		[ShareOnto_Class30001]
+		[ShareOnto_Class0]
+		[ShareOnto_Class20000]
+		[ShareOnto_Class50000]
+		[ShareOnto_Class60000])
+	(cloNamespace [ShareOnto_Class4])
+	(cloVars
+		[ShareOnto_Class7]
+		[ShareOnto_Class8]
+		[ShareOnto_Class40004]
+		[ShareOnto_Class40001]
+		[ShareOnto_Class40067]
+		[ShareOnto_Class30000]
+		[ShareOnto_Class90001])
+	(title "Share Ontology"))
+
+([ShareOnto_Class30000] of  CloVar
+
+	(source "nil")
+	(title "copy-instance"))
+
+([ShareOnto_Class30001] of  CloFunction
+
+	(source "(if-let [clz (DisplayUtilities/pickCls nil *kb* [(cls \":THING\")])]\n  (do (def cnt 0)\n    (doseq [in (cls-instances (.getName clz))]\n      (if (< (count (.getReferences in)) 2)\n        (do\n          (println (str \"Unreferenced instance \" (or (titorlab-slot-val in *kb*) (.getName in)) \" of class \" (.getName clz)))\n          (def cnt (inc cnt)))))\n    (confirm (str \"Found \" cnt))))")
+	(title "find-unref [hm inst]"))
+
+([ShareOnto_Class30002] of  CloFunction
+
+	(source "(if-let [clz (DisplayUtilities/pickCls nil *kb* [(cls \":THING\")])]\n  (do (def cnt 0)\n    (doseq [in (cls-instances (.getName clz))]\n      (if (< (count (.getReferences in)) 2)\n        (do\n          (println (str \"Deleting unreferenced instance \" (or (titorlab-slot-val in *kb*) (.getName in)) \" of class \" (.getName clz)))\n          (delin in)\n          (def cnt (inc cnt)))))\n    (confirm (str \"Deleted \" cnt))))")
+	(title "delete-unref [hm inst]"))
+
+([ShareOnto_Class4] of  CloNamespace
+
+	(source "(:use protege.core)\n(:import \n  javax.swing.JFileChooser\n  javax.swing.JOptionPane\n  edu.stanford.smi.protege.ui.DisplayUtilities\n  edu.stanford.smi.protege.model.Cls\n  edu.stanford.smi.protege.model.Instance\n  edu.stanford.smi.protege.model.Project)")
+	(title "share.onto"))
+
+([ShareOnto_Class40000] of  CloFunction
+
+	(source "([in deep]\n  (def ERROR false)\n  (copy-instance in KB2 KB1 deep)\n  (if ERROR\n    (do (confirm (str \"Errors while copying \" (titorlab-slot-val in KB2)))\n      (doseq [in (vals @INSS-MAPPING)]\n        (delin in))\n      (def INSS-MAPPING (atom {})))\n    (println (str \"Deeply copied \" (titorlab-slot-val in KB2)))))\n([in kb2 kb1 deep]\n  (or (@INSS-MAPPING in)\n    (let[typ2 (.getDirectType in)\n           tn (.getName typ2)\n           sls2 (.getTemplateSlots typ2)]\n      (if-let [typ1 (cls tn)]\n        (let [cin (crin tn)]\n          (swap! INSS-MAPPING assoc in cin)\n          (doseq [sl2 sls2]\n            (let [sn (.getName sl2)\n                   sl1 (.getSlot kb1 sn)]\n              (if sl1\n                (if (.getAllowsMultipleValues sl1)\n                  (if-let [insl2vv (seq (.getOwnSlotValues in sl2))]\n                    (ssvs cin sn (map #(find-or-create-copy % kb2 kb1 deep) insl2vv)))\n                  (if (or (= sn \"label\") (= sn \"title\"))\n                    (ssv cin sn (check-n-gen tn sn (.getOwnSlotValue in sl2)))\n                    (ssv cin sn (find-or-create-copy (.getOwnSlotValue in sl2) kb2 kb1 deep))))\n                (do \n                  (def ERROR true)\n                  (println  (str \"Slot not exists: \" sn \" for class: \" tn \"!\"))) )))\n          cin)\n        (do (println (str \"Class \" tn \" not exists!\"))\n          (def ERROR true)\n          nil)))))")
+	(title "copy-instance"))
+
+([ShareOnto_Class40001] of  CloVar
+
+	(source "(atom {})")
+	(title "INSS-MAPPING"))
+
+([ShareOnto_Class40004] of  CloVar
+
+	(source "nil")
+	(title "KB1"))
+
+([ShareOnto_Class40042] of  CloFunction
+
+	(source "(println :C-N-G tn sn val)\n(if-let [old (fifos tn sn val)]\n  (str val \".\" (java.util.Date.))\n  val)")
+	(title "check-n-gen [tn sn val]"))
+
+([ShareOnto_Class40067] of  CloVar
+
+	(source "nil")
+	(title "ERROR"))
+
+([ShareOnto_Class5] of  CloFunction
+
+	(source "(let [fc (JFileChooser. s)]\n  (if (= (.showOpenDialog fc nil) JFileChooser/APPROVE_OPTION)\n    (.getPath (.getSelectedFile fc))))")
+	(title "file-chooser [s]"))
+
+([ShareOnto_Class50000] of  CloFunction
+
+	(source "(let [mp (into {} hm)\n       nix (mp \"filter-pattern\")]\n  (println \"Deleted:\")\n  (doseq [e (.getInstances *kb*)]\n    (if-let [lab (sv e \"label\")]\n      (when (.contains lab nix)\n        (println (str \"Label: \" lab))\n        (delin e)))\n    (if-let [tit (sv e \"title\")]\n      (when (.contains tit nix)\n        (println (str \"Title: \" tit))\n        (delin e)))))")
+	(title "delfil [hm inst]"))
+
+([ShareOnto_Class6] of  CloFunction
+
+	(source "([hm inst]\n  (if-let [pth (file-chooser (.getPath (.getProjectDirectoryFile *prj*)))]\n    (let [err (java.util.ArrayList.)]\n      (if PRJ2\n        (.dispose PRJ2))\n      (def PRJ2 (Project. pth err))\n      (if (> (.size err) 0)\n        (ssv inst \"source-project\" (apply str (seq err)))\n        (do\n          (def KB1 *kb*)\n          (def KB2 (.getKnowledgeBase PRJ2))\n          (def INSS-MAPPING (atom {}))\n          (ssv inst \"source-project\" (str KB2))) ) )))\n([path]\n  (let [err (java.util.ArrayList.)]\n    (if PRJ2\n      (.dispose PRJ2))\n    (def PRJ2 (Project. path err))\n    (if (> (.size err) 0)\n      (apply println (seq err))\n      (do\n        (def KB1 *kb*)\n        (def KB2 (.getKnowledgeBase PRJ2))\n        (def INSS-MAPPING (atom {}))\n        (println \"Second project:\" KB2 \"from\" path)) ) ))")
+	(title "load-src-prj"))
+
+([ShareOnto_Class60000] of  CloFunction
+
+	(source "(let [clz  (REPL-SLOT-VAL :class)\n       slt   (REPL-SLOT-VAL :slot)\n       fun  (REPL-SLOT-VAL :func)]\n  (doseq [ins (cls-instances clz)]\n    (ssv ins slt (fun (sv ins slt)))))")
+	(title "replace-slot-value []"))
+
+([ShareOnto_Class60001] of  CloProgram
+
+	(cloFunctions
+		[ShareOnto_Class60006]
+		[ShareOnto_Class60007]
+		[ShareOnto_Class60008]
+		[ShareOnto_Class60009]
+		[ShareOnto_Class60010]
+		[ShareOnto_Class60011]
+		[ShareOnto_Class70001]
+		[ShareOnto_Class70000]
+		[ShareOnto_Class80006]
+		[ShareOnto_Class80005])
+	(cloNamespace [ShareOnto_Class60002])
+	(cloVars
+		[ShareOnto_Class60003]
+		[ShareOnto_Class60004]
+		[ShareOnto_Class60005]
+		[ShareOnto_Class80001])
+	(documentation [ShareOnto_Class60012])
+	(title "To From Azm"))
+
+([ShareOnto_Class60002] of  CloNamespace
+
+	(source "(:require\n  [protege.core :as p]\n  [file.proc :as f]\n  [share.onto :as s])")
+	(title "taz"))
+
+([ShareOnto_Class60003] of  CloVar
+
+	(source "'[status\n run\n parent\n protagonist\n id\n altitude\n playground-index\n tangage\n player]")
+	(title "DEL-SLOTS"))
+
+([ShareOnto_Class60004] of  CloVar
+
+	(source "'[WorkingPrograms\n Run\n CloProgram\n CloFuncall\n CloFunction\n CloNamespace\n CloVar]")
+	(title "DELIN-CLASSES"))
+
+([ShareOnto_Class60005] of  CloVar
+
+	(source "'[[SimpleComponent label OMT]\n  [Playground label pg1]\n  [Playground label pg2]]")
+	(title "DELIN-CLS-SLT-VALS"))
+
+([ShareOnto_Class60006] of  CloFunction
+
+	(source ";; Delete slot\n(.deleteSlot p/*kb* (p/slt name))")
+	(title "dels [name]"))
+
+([ShareOnto_Class60007] of  CloFunction
+
+	(source ";; Delete instances of class\n(doseq [ins (p/cls-instances name)]\n  (p/delin ins))")
+	(title "delinc [name]"))
+
+([ShareOnto_Class60008] of  CloFunction
+
+	(source ";; Patch line \"(included_projects ..)\" in .pprj file\n([]\n  (incl-patch \"Actors5.pprj\"))\n([patch]\n  (if-let [path (s/file-chooser (System/getProperty \"user.dir\"))]\n    (incl-patch path patch)))\n([path patch]\n  (let [begin \"(included_projects\"\n         patch-func (fn [line]\n	(if (.contains line begin)\n	  (f/write-line (str \"	\" begin \" \\\"\" patch \"\\\")\"))\n	  (f/write-line line)))]\n    (println :INCL-PATCH path patch)\n    (f/update-file path 1000 patch-func)\n    (println :END)))")
+	(title "incl-patch"))
+
+([ShareOnto_Class60009] of  CloFunction
+
+	(source "(println :DEL-SLOTS)\n(doseq [slot DEL-SLOTS]\n  (println \" - \" slot)\n  (dels (name slot)))\n(println :DELIN-CLASSES)\n(doseq [cls DELIN-CLASSES]\n  (println \" - \" cls)\n  (delinc (name cls)))\n(println :DELIN-CLS-SLT-VALS)\n(doseq [[c s v] DELIN-CLS-SLT-VALS]\n  (println \" - \" c s v)\n  (p/delin (p/fifos (name c) (name s) (name v))))")
+	(title "to-azm []"))
+
+([ShareOnto_Class60010] of  CloFunction
+
+	(title "dels-act []"))
+
+([ShareOnto_Class60011] of  CloFunction
+
+	(title "rename-clss []"))
+
+([ShareOnto_Class60012] of  CloDocumentation
+
+	(source "Порядок конвертации проектов из Scena-1.2/SA в DroolsTabScene-5.1kt.\n———————————————————————————————————————————————————————————\n\n1. Сохранить отлаженный в Scena-1.2/SA проект в папке SA-проектов DroolsTabScene-5.1kt (меню File > Save Project As …).\n\n2. Выполнить команду \"SA.To Azm Converter\" (на вкладке OpenMap кнопка Execute Command (с мегафоном)).\n\n3. Сохранить проект еще раз, не обращая внимание на предупреждения.\n\n4. Выполнить команду \"SA.Include Patch\". При этом в проводнике выбрать файл .pprj только что сохраненного проекта.\n\n5. Выйти из Scena-1.2/SA НЕ СОХРАНЯЯ ПРОЕКТ В ТРЕТИЙ РАЗ!\n\n6. Войти в DroolsTabScene-5.1kt и в ней открыть данный проект, не обращая внимание на сообщение об ошибке.\n\n7. Удалить в конфигурации проекта ClojureTab и одновременно добавить DroolsTab (меню Project > Configure..)\n\n8. Создать экземпляр класса RuleBase путем копирования существующего экземпляра Scenario Rule Base, переименования и аннотирования с помощью желтого стикера (кнопка Create Instance Note со сверкающим сердцем в правом верхнем углу окна).\n\nПроект готов к использованию в DroolsTabScene-5.1kt и в ОНТОМАП."))
+
+([ShareOnto_Class7] of  CloVar
+
+	(source "nil")
+	(title "PRJ2"))
+
+([ShareOnto_Class70000] of  CloFunction
+
+	(source "(if-let [path (s/file-chooser (System/getProperty \"user.dir\"))]\n  (let [before \"(before\"\n         after \"(after\"\n         patch-func (fn [line]\n	(cond \n	  (.contains line before)\n	    (f/write-line (str \"	\" before \" \" (gen-script before line) \")\"))\n	  (.contains line after)\n	    (f/write-line (str \"	\" after \" \" (gen-script after line) \")\"))\n	  true\n	    (f/write-line line)))]\n      (println :SCRIPT-PATCH path)\n      (f/update-file path 1000 patch-func)\n      (println :END)))")
+	(title "script-patch []"))
+
+([ShareOnto_Class70001] of  CloFunction
+
+	(source "(println :GEN-SCRIPT-FOR line)\n(let [pfx (.substring begin 1)\n       [_ txt-rp] (seq (.split line pfx))\n       txt (str \"(\" txt-rp)\n       txt (first (read-string txt))\n       txt (.replaceAll txt \"\\\"\" \"\\\\\\\\\\\"\")\n       txt (.replaceAll txt \"\\\\n\" \"\\\\\\\\\\\\n\")\n       nam (name (gensym pfx))]\n  (p/ctpl (str \"([\" nam \"] of  Script\"))\n  (p/ctpl \"\")\n  (p/ctpl (str\"	(title \\\"\" nam \"\\\" )\"))\n  (p/ctpl (str\"	(source \\\"\" txt \"\\\" ))\"))\n  (p/ctpl \"\")\n  (str \"[\" nam \"]\"))")
+	(title "gen-script [begin line]"))
+
+([ShareOnto_Class8] of  CloVar
+
+	(source "nil")
+	(title "KB2"))
+
+([ShareOnto_Class80000] of  CloFuncall
+
+	(source "(invoke-later(share.onto/file-chooser  \"\"))"))
+
+([ShareOnto_Class80001] of  CloVar
+
+	(source "{\"OMArc\" \"OMTArc\"\n \"OMPoly\" \"OMTPoly\"\n \"OMCircle\" \"OMTCircle\"\n \"WaitEvents\" \"WaitEvent\"\n \"SimpleMessage\" \"TimeMessage\"\n \"CalcMessage\" \"AttributeMessage\"}")
+	(title "RENAME-CLASS"))
+
+([ShareOnto_Class80005] of  CloFunction
+
+	(source "(if-let [path (s/file-chooser (System/getProperty \"user.dir\"))]\n  (let [patt \"] of  \"\n         patch-func (fn [line]\n	(if (.contains line patt)\n                          (f/write-line (try-update line RENAME-CLASS))\n	  (f/write-line line)))]\n      (println :RENCLASS-PATCH path)\n      (f/update-file path 1000 patch-func)\n      (println :END)))")
+	(title "renclass-patch []"))
+
+([ShareOnto_Class80006] of  CloFunction
+
+	(source "(loop [[k & r :as kk] (keys mp)]\n  (if (seq kk)\n    (if (.contains line k)\n      (.replace line k (mp k))\n      (recur r))\n    line))")
+	(title "try-update [line mp]"))
+
+([ShareOnto_Class90001] of  CloVar
+
+	(source "{:class \"NavOb\"\n :slot \"url\"\n :func (fn [v] (.replace v \"data/images\" \n                                     \"resources/public/img\"))}")
+	(title "REPL-SLOT-VAL"))

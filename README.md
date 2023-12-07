@@ -24,11 +24,11 @@ $ lein run
 
 ## Short video lessons 
 
-1. [Hello World]()
+1. [Hello World](https://www.youtube.com/watch?v=EKE1dBizp6U)
 
-2. [Hello Page]()
+2. [Hello Page](https://www.youtube.com/watch?v=PQULRwcAITo)
 
-3. [Hello Backend]()
+3. [Hello Backend](https://www.youtube.com/watch?v=12oEoJJOn30)
 
 ## Description 
 
