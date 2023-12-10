@@ -137,7 +137,19 @@ goog.addDependency("../devtools/hints.js", ['devtools.hints'], ['cljs.stacktrace
 goog.addDependency("../devtools/core.js", ['devtools.core'], ['devtools.toolbox', 'devtools.util', 'cljs.core', 'devtools.async', 'devtools.formatters', 'devtools.hints', 'devtools.context', 'devtools.defaults', 'devtools.prefs']);
 goog.addDependency("../figwheel/repl/preload.js", ['figwheel.repl.preload'], ['cljs.core', 'figwheel.repl']);
 goog.addDependency("../devtools/preload.js", ['devtools.preload'], ['cljs.core', 'devtools.core', 'devtools.prefs']);
-goog.addDependency("../hello/page.js", ['hello.page'], ['cljs.core']);
+goog.addDependency("../reagent/debug.js", ['reagent.debug'], ['cljs.core']);
+goog.addDependency("../reagent/impl/util.js", ['reagent.impl.util'], ['cljs.core', 'goog.object', 'reagent.debug', 'clojure.string', 'clojure.walk']);
+goog.addDependency("../reagent/impl/protocols.js", ['reagent.impl.protocols'], ['cljs.core']);
+goog.addDependency("../reagent/impl/batching.js", ['reagent.impl.batching'], ['reagent.impl.util', 'cljs.core', 'reagent.debug']);
+goog.addDependency("../reagent/ratom.js", ['reagent.ratom'], ['reagent.impl.util', 'cljs.core', 'goog.object', 'reagent.impl.batching', 'clojure.set', 'reagent.debug']);
+goog.addDependency("../cljsjs/react/development/react.inc.js", ['react', 'cljsjs.react'], [], {'foreign-lib': true});
+goog.addDependency("../reagent/impl/component.js", ['reagent.impl.component'], ['reagent.impl.util', 'reagent.impl.protocols', 'reagent.ratom', 'react', 'cljs.core', 'goog.object', 'reagent.impl.batching', 'reagent.debug']);
+goog.addDependency("../reagent/impl/input.js", ['reagent.impl.input'], ['reagent.impl.protocols', 'cljs.core', 'reagent.impl.batching', 'reagent.impl.component']);
+goog.addDependency("../reagent/impl/template.js", ['reagent.impl.template'], ['reagent.impl.util', 'reagent.impl.protocols', 'reagent.ratom', 'react', 'cljs.core', 'goog.object', 'reagent.impl.component', 'reagent.impl.input', 'reagent.debug', 'clojure.string']);
+goog.addDependency("../reagent/core.js", ['reagent.core'], ['reagent.impl.util', 'reagent.impl.protocols', 'reagent.ratom', 'react', 'cljs.core', 'reagent.impl.template', 'reagent.impl.batching', 'reagent.impl.component', 'reagent.debug']);
+goog.addDependency("../cljsjs/react-dom/development/react-dom.inc.js", ['react_dom', 'react_dom.client', 'cljsjs.react.dom'], ['react'], {'foreign-lib': true});
+goog.addDependency("../reagent/dom.js", ['reagent.dom'], ['reagent.impl.util', 'reagent.impl.protocols', 'reagent.ratom', 'cljs.core', 'reagent.impl.template', 'reagent.impl.batching', 'react_dom']);
+goog.addDependency("../hello/reagent.js", ['hello.reagent'], ['reagent.core', 'cljs.core', 'clojure.string', 'reagent.dom']);
 goog.addDependency("../ajax/protocols.js", ['ajax.protocols'], ['cljs.core']);
 goog.addDependency("../ajax/util.js", ['ajax.util'], ['cljs.core', 'ajax.protocols']);
 goog.addDependency("../ajax/url.js", ['ajax.url'], ['cljs.core', 'ajax.util', 'clojure.string']);
@@ -174,4 +186,5 @@ goog.addDependency("net/xhrmanager.js", ['goog.net.XhrManager', 'goog.net.XhrMan
 goog.addDependency("../ajax/xhrio.js", ['ajax.xhrio'], ['goog.net.XhrManager', 'goog.net.XhrIo', 'goog.json', 'goog.Uri', 'cljs.core', 'goog.net.EventType', 'ajax.protocols', 'goog.events', 'goog.net.ErrorCode']);
 goog.addDependency("../ajax/core.js", ['ajax.core'], ['ajax.formats', 'ajax.xml_http_request', 'ajax.transit', 'ajax.json', 'ajax.url', 'ajax.interceptors', 'cljs.core', 'ajax.ring', 'ajax.easy', 'ajax.simple', 'ajax.protocols', 'ajax.util', 'clojure.string', 'ajax.xhrio']);
 goog.addDependency("../hello/frontend.js", ['hello.frontend'], ['ajax.core', 'cljs.core']);
+goog.addDependency("../hello/page.js", ['hello.page'], ['cljs.core']);
 goog.addDependency("../hello/world.js", ['hello.world'], ['cljs.core']);

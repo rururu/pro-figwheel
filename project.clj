@@ -17,6 +17,9 @@
                  [protege/ClojureTab "1.5.0"]
                  [http-kit/http-kit "2.8.0-beta3"]
                  [compojure "1.7.0"]
-                 [cljs-ajax "0.8.4"]]
+                 [cljs-ajax "0.8.4"]
+                 [reagent "1.2.0"]
+                 [cljsjs/react "18.2.0-1"]
+                 [cljsjs/react-dom "18.2.0-1"]]
   :repositories {"local" {:url ~(str (.toURI (java.io.File. "repo"))) :checksum :warn}}
   :main pro-figwheel.main)

@@ -1,0 +1,84 @@
+; Sun Dec 10 21:24:31 MSK 2023
+; 
+;+ (version "3.5")
+;+ (build "Build 663")
+
+([HelloReagent_Class0] of  CljsProgram
+
+	(cloFunctions
+		[HelloReagent_Class10005]
+		[HelloReagent_Class10006]
+		[HelloReagent_Class10007]
+		[HelloReagent_Class10008]
+		[HelloReagent_Class10009])
+	(cloNamespace [HelloReagent_Class1])
+	(cloVars
+		[HelloReagent_Class10002]
+		[HelloReagent_Class10003]
+		[HelloReagent_Class10004])
+	(css [HelloReagent_Class10001])
+	(epilogue "(enable-console-print!)")
+	(html [HelloReagent_Class10000])
+	(title "Hello Reagent"))
+
+([HelloReagent_Class1] of  CloNamespace
+
+	(source "(:require \n  [reagent.core :as r]\n  [reagent.dom :as rdom]\n  [clojure.string :as str])")
+	(title "hello.reagent"))
+
+([HelloReagent_Class10000] of  HTML
+
+	(save-in "resources/public")
+	(source "<!doctype html>\n<html>\n  <head>\n    <meta charset=\"utf-8\">\n    <title>Hello Reagent</title>\n    <link rel=\"stylesheet\" href=\"css/hello_reagent.css\">\n  </head>\n  <body>\n    <div id=\"app\">\n      <h1>Hello Reagent!</h1>\n    </div>\n    <script src=\"cljs-out/dev-main.js\"></script>\n    <script>\n      hello.reagent.run();\n    </script>\n  </body>\n</html>")
+	(title "index"))
+
+([HelloReagent_Class10001] of  CSS
+
+	(save-in "resources/public/css")
+	(source "div, h1, input {\n    font-family: HelveticaNeue, Helvetica;\n    color: #777;\n}\n\n.example-clock {\n    font-size: 128px;\n    line-height: 1.2em;\n    font-family: HelveticaNeue-UltraLight, Helvetica;\n}\n\n@media (max-width: 768px) {\n    .example-clock {\n        font-size: 64px;\n    }\n}\n\n.color-input, .color-input input {\n    font-size: 24px;\n    line-height: 1.5em;\n}")
+	(title "hello_reagent"))
+
+([HelloReagent_Class10002] of  CloVar
+
+	(source "(defonce timer (r/atom (js/Date.)))")
+	(title "TIMER"))
+
+([HelloReagent_Class10003] of  CloVar
+
+	(source "(defonce time-color (r/atom \"#080\"))")
+	(title "TIME-COLOR"))
+
+([HelloReagent_Class10004] of  CloVar
+
+	(source "(defonce time-updater (js/setInterval\n  #(reset! timer (js/Date.)) 1000))")
+	(title "TIME-UPDATER"))
+
+([HelloReagent_Class10005] of  CloFunction
+
+	(source "[:h1 message]")
+	(title "greeting [message]"))
+
+([HelloReagent_Class10006] of  CloFunction
+
+	(source "(let [time-str (-> @timer .toTimeString (str/split \" \") first)]\n    [:div.example-clock\n    {:style {:color @time-color}}\n    time-str])")
+	(title "clock []"))
+
+([HelloReagent_Class10007] of  CloFunction
+
+	(source "[:div.color-input\n \"Color: \"\n [:input {:type \"text\"\n             :value @time-color\n             :on-change #(reset! time-color (-> % .-target .-value))}]]")
+	(title "color-input []"))
+
+([HelloReagent_Class10008] of  CloFunction
+
+	(source "[:div\n   [greeting \"Current Time\"]\n   [clock]\n   [color-input]]")
+	(title "simple-example []"))
+
+([HelloReagent_Class10009] of  CloFunction
+
+	(source "(rdom/render [simple-example] (js/document.getElementById \"app\"))")
+	(title "run []"))
+
+([HelloReagent_Class2] of  FigwheelController
+
+	(cljs-program [HelloReagent_Class0])
+	(title "FigwheelController"))

@@ -148,3 +148,26 @@
 2023.12.06 16:34:12.542 MSK WARNING: missing bundle: protege_text -- BundleHelper.<init>()
 2023.12.06 16:34:23.556 MSK INFO: Project load time for file:/home/ru/clojure/pro-figwheel/pprj_base/ProClojure.pprj: 0 sec -- ProjectChooser.loadProject()
 2023.12.06 16:34:23.974 MSK INFO: UI display time = 0 sec -- ProjectManager$2.run()
+2023.12.10 17:09:21.634 MSK INFO: *** SYSTEM START ***
+2023.12.10 17:09:21.838 MSK WARNING: missing bundle: protege_text -- BundleHelper.<init>()
+2023.12.10 17:09:27.550 MSK INFO: Load time for file:/home/ru/clojure/pro-figwheel/pprj_apps/HelloHelix.pprj = 0 sec (project) + 0 sec (ui) -- ProjectManager$3.run()
+2023.12.10 17:36:29.432 MSK INFO: *** SYSTEM START ***
+2023.12.10 17:36:29.623 MSK WARNING: missing bundle: protege_text -- BundleHelper.<init>()
+2023.12.10 17:36:38.365 MSK INFO: Load time for file:/home/ru/clojure/pro-figwheel/pprj_apps/HelloHelix.pprj = 0 sec (project) + 4 sec (ui) -- ProjectManager$3.run()
+2023.12.10 17:42:56.255 MSK INFO: *** SYSTEM START ***
+2023.12.10 17:42:56.447 MSK WARNING: missing bundle: protege_text -- BundleHelper.<init>()
+2023.12.10 17:43:04.217 MSK INFO: Load time for file:/home/ru/clojure/pro-figwheel/pprj_apps/HelloHelix.pprj = 0 sec (project) + 4 sec (ui) -- ProjectManager$3.run()
+2023.12.10 20:40:33.578 MSK INFO: *** SYSTEM START ***
+2023.12.10 20:40:33.771 MSK WARNING: missing bundle: protege_text -- BundleHelper.<init>()
+2023.12.10 20:43:13.341 MSK INFO: *** SYSTEM START ***
+2023.12.10 20:43:13.536 MSK WARNING: missing bundle: protege_text -- BundleHelper.<init>()
+2023.12.10 20:44:34.040 MSK INFO: Load time for file:/home/ru/clojure/pro-figwheel/pprj_apps/HelloReagent.pprj = 0 sec (project) + 0 sec (ui) -- ProjectManager$3.run()
+2023.12.10 20:55:47.732 MSK INFO: *** SYSTEM START ***
+2023.12.10 20:55:47.917 MSK WARNING: missing bundle: protege_text -- BundleHelper.<init>()
+2023.12.10 20:55:56.202 MSK INFO: Load time for file:/home/ru/clojure/pro-figwheel/pprj_apps/HelloReagent.pprj = 0 sec (project) + 4 sec (ui) -- ProjectManager$3.run()
+2023.12.10 21:15:26.617 MSK INFO: *** SYSTEM START ***
+2023.12.10 21:15:26.802 MSK WARNING: missing bundle: protege_text -- BundleHelper.<init>()
+2023.12.10 21:15:35.075 MSK INFO: Load time for file:/home/ru/clojure/pro-figwheel/pprj_apps/HelloReagent.pprj = 0 sec (project) + 4 sec (ui) -- ProjectManager$3.run()
+2023.12.10 21:19:50.765 MSK INFO: *** SYSTEM START ***
+2023.12.10 21:19:50.952 MSK WARNING: missing bundle: protege_text -- BundleHelper.<init>()
+2023.12.10 21:19:59.384 MSK INFO: Load time for file:/home/ru/clojure/pro-figwheel/pprj_apps/HelloReagent.pprj = 0 sec (project) + 4 sec (ui) -- ProjectManager$3.run()

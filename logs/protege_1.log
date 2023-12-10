@@ -52,3 +52,6 @@
 2023.12.07 18:39:28.096 MSK WARNING: missing bundle: protege_text -- BundleHelper.<init>()
 2023.12.07 18:40:00.379 MSK INFO: Project load time for file:/home/ru/clojure/pro-figwheel/pprj_apps/HelloWorld.pprj: 1 sec -- ProjectChooser.loadProject()
 2023.12.07 18:40:10.513 MSK INFO: UI display time = 10 sec -- ProjectManager$2.run()
+2023.12.10 13:35:01.205 MSK INFO: *** SYSTEM START ***
+2023.12.10 13:35:01.956 MSK WARNING: missing bundle: protege_text -- BundleHelper.<init>()
+2023.12.10 13:36:22.326 MSK INFO: Load time for file:/home/ru/clojure/pro-figwheel/pprj_apps/HelloHelix.pprj = 0 sec (project) + 0 sec (ui) -- ProjectManager$3.run()
