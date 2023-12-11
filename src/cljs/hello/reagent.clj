@@ -25,13 +25,10 @@
 
 (defn simple-example []
   [:div
-   [greeting "Current Time"]
+   [greeting "Correct Time"]
    [clock]
    [color-input]])
 
 (defn run []
   (rdom/render [simple-example] (js/document.getElementById "app")))
 
-
-(enable-console-print!)
-(run)

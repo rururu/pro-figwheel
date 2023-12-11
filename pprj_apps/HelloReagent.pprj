@@ -1,4 +1,4 @@
-; Sun Dec 10 21:24:31 MSK 2023
+; Mon Dec 11 11:16:48 MSK 2023
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -202,28 +202,28 @@
 	(name "instances_file_name")
 	(string_value "HelloReagent.pins"))
 
-([KB_194377_Class472] of  Map
+([KB_591008_Class489] of  Map
 
 	(entries
-		[KB_194377_Class473]
-		[KB_194377_Class474]
-		[KB_194377_Class475]))
+		[KB_591008_Class490]
+		[KB_591008_Class491]
+		[KB_591008_Class492]))
 
-([KB_194377_Class473] of  Map_Entry
+([KB_591008_Class490] of  Map_Entry
 
 	(key "suppress_instance_counting")
 	(key_class "java.lang.String")
 	(value "false")
 	(value_class "java.lang.String"))
 
-([KB_194377_Class474] of  Map_Entry
+([KB_591008_Class491] of  Map_Entry
 
 	(key "add_name_on_instance_form")
 	(key_class "java.lang.String")
 	(value "false")
 	(value_class "java.lang.String"))
 
-([KB_194377_Class475] of  Map_Entry
+([KB_591008_Class492] of  Map_Entry
 
 	(key "change_tracking_active")
 	(key_class "java.lang.String")

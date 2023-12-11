@@ -51,3 +51,21 @@
 (defn save-css [hm inst]
   (save-asset inst ".css"))
 
+(defn save-ns [hm inst]
+  (let [save-in "src/cljs"
+       refs (.getReferences inst)
+       frms (map #(.getFrame %) refs)
+       is-prg? #(= (.getDirectType %) (cls "CljsProgram"))
+       prog (first (filter is-prg? frms))
+       epi (sv prog "epilogue")
+       nsi (sv prog "cloNamespace")
+       nss (sv nsi "title")
+       [nam nsf] (ns-folder-and-name nss)
+       pgr (ProgramGenerator. prog)
+       _ (chk&mk-folder (str save-in SEP nsf))
+       fwr (FileWriter. (str save-in SEP nsf SEP nam ".cljs"))]
+  (.generateProgram pgr fwr)
+  (if (not (empty? epi))
+    (.write fwr (str "\n" epi)))
+  (.close fwr)))
+

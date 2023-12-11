@@ -1,4 +1,4 @@
-; Mon Dec 04 17:25:25 MSK 2023
+; Mon Dec 11 11:14:33 MSK 2023
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -20,11 +20,11 @@
 ([BROWSER_SLOT_NAMES] of  Property_List
 
 	(properties
-		[Figwheel_ProjectKB_Class237]
-		[Figwheel_ProjectKB_Class238]
-		[Figwheel_ProjectKB_Class239]
-		[Figwheel_ProjectKB_Class20240]
-		[Figwheel_ProjectKB_Class20241]))
+		[Figwheel_ProjectKB_Class10306]
+		[Figwheel_ProjectKB_Class10307]
+		[Figwheel_ProjectKB_Class10308]
+		[Figwheel_ProjectKB_Class10309]
+		[Figwheel_ProjectKB_Class10310]))
 
 ([CLSES_TAB] of  Widget
 
@@ -190,6 +190,31 @@
 
 ([Figwheel_ProjectKB_Class10278] of  Property_List
 )
+
+([Figwheel_ProjectKB_Class10306] of  String
+
+	(name "CSS")
+	(string_value "title"))
+
+([Figwheel_ProjectKB_Class10307] of  String
+
+	(name ":INSTANCE-ANNOTATION")
+	(string_value "%3AANNOTATION-TEXT"))
+
+([Figwheel_ProjectKB_Class10308] of  String
+
+	(name "HTML")
+	(string_value "title"))
+
+([Figwheel_ProjectKB_Class10309] of  String
+
+	(name "FigwheelController")
+	(string_value "{cljs-program%3A+}cljs-program"))
+
+([Figwheel_ProjectKB_Class10310] of  String
+
+	(name ":PAL-CONSTRAINT")
+	(string_value "%3APAL-NAME"))
 
 ([Figwheel_ProjectKB_Class10398] of  Widget
 
@@ -614,16 +639,6 @@
 ([Figwheel_ProjectKB_Class20231] of  Property_List
 )
 
-([Figwheel_ProjectKB_Class20240] of  String
-
-	(name "FigwheelController")
-	(string_value "{cljs-program%3A+}cljs-program"))
-
-([Figwheel_ProjectKB_Class20241] of  String
-
-	(name ":PAL-CONSTRAINT")
-	(string_value "%3APAL-NAME"))
-
 ([Figwheel_ProjectKB_Class230] of  Widget
 
 	(height 190)
@@ -637,21 +652,6 @@
 
 ([Figwheel_ProjectKB_Class231] of  Property_List
 )
-
-([Figwheel_ProjectKB_Class237] of  String
-
-	(name "CSS")
-	(string_value "title"))
-
-([Figwheel_ProjectKB_Class238] of  String
-
-	(name ":INSTANCE-ANNOTATION")
-	(string_value "%3AANNOTATION-TEXT"))
-
-([Figwheel_ProjectKB_Class239] of  String
-
-	(name "HTML")
-	(string_value "title"))
 
 ([Figwheel_ProjectKB_Class240] of  Widget
 
@@ -727,6 +727,121 @@
 
 	(boolean_value FALSE)
 	(name "ButtonDisplayed-Delete Instance"))
+
+([Figwheel_ProjectKB_Class306] of  Widget
+
+	(is_hidden FALSE)
+	(name "CljsFunction")
+	(property_list [Figwheel_ProjectKB_Class309])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
+
+([Figwheel_ProjectKB_Class309] of  Property_List
+
+	(properties
+		[Figwheel_ProjectKB_Class310]
+		[Figwheel_ProjectKB_Class311]
+		[Figwheel_ProjectKB_Class313]
+		[Figwheel_ProjectKB_Class315]
+		[Figwheel_ProjectKB_Class321]
+		[Figwheel_ProjectKB_Class323]))
+
+([Figwheel_ProjectKB_Class310] of  Property_List
+
+	(name "layout properties"))
+
+([Figwheel_ProjectKB_Class311] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "title")
+	(property_list [Figwheel_ProjectKB_Class312])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 520)
+	(x 0)
+	(y 0))
+
+([Figwheel_ProjectKB_Class312] of  Property_List
+)
+
+([Figwheel_ProjectKB_Class313] of  Widget
+
+	(height 390)
+	(is_hidden FALSE)
+	(name "source")
+	(property_list [Figwheel_ProjectKB_Class314])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextAreaWidget")
+	(width 520)
+	(x 0)
+	(y 60))
+
+([Figwheel_ProjectKB_Class314] of  Property_List
+)
+
+([Figwheel_ProjectKB_Class315] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "documentation")
+	(property_list [Figwheel_ProjectKB_Class316])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceFieldWidget")
+	(width 320)
+	(x 0)
+	(y 450))
+
+([Figwheel_ProjectKB_Class316] of  Property_List
+
+	(properties
+		[Figwheel_ProjectKB_Class317]
+		[Figwheel_ProjectKB_Class318]
+		[Figwheel_ProjectKB_Class319]
+		[Figwheel_ProjectKB_Class320]))
+
+([Figwheel_ProjectKB_Class317] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([Figwheel_ProjectKB_Class318] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([Figwheel_ProjectKB_Class319] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Стереть Выделенный Экземпляр"))
+
+([Figwheel_ProjectKB_Class320] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Показать ссылки на Выделенное Значение  "))
+
+([Figwheel_ProjectKB_Class321] of  Widget
+
+	(height 0)
+	(is_hidden FALSE)
+	(name "butt-load-ns")
+	(property_list [Figwheel_ProjectKB_Class322])
+	(width 0)
+	(x 0)
+	(y 0))
+
+([Figwheel_ProjectKB_Class322] of  Property_List
+)
+
+([Figwheel_ProjectKB_Class323] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "butt-save-ns")
+	(property_list [Figwheel_ProjectKB_Class324])
+	(widget_class_name "clojuretab.ClojureActionButton")
+	(width 200)
+	(x 320)
+	(y 450))
+
+([Figwheel_ProjectKB_Class324] of  Property_List
+)
 
 ([Figwheel_ProjectKB_Class35] of  String
 
@@ -851,34 +966,6 @@
 	(is_hidden FALSE)
 	(widget_class_name "edu.stanford.smi.protege.widget.InstancesTab"))
 
-([KB_028985_Class228] of  Map
-
-	(entries
-		[KB_028985_Class229]
-		[KB_028985_Class230]
-		[KB_028985_Class231]))
-
-([KB_028985_Class229] of  Map_Entry
-
-	(key "suppress_instance_counting")
-	(key_class "java.lang.String")
-	(value "false")
-	(value_class "java.lang.String"))
-
-([KB_028985_Class230] of  Map_Entry
-
-	(key "add_name_on_instance_form")
-	(key_class "java.lang.String")
-	(value "false")
-	(value_class "java.lang.String"))
-
-([KB_028985_Class231] of  Map_Entry
-
-	(key "change_tracking_active")
-	(key_class "java.lang.String")
-	(value "false")
-	(value_class "java.lang.String"))
-
 ([KB_142563_Class0] of  String
 
 	(name "factory_class_name")
@@ -979,6 +1066,34 @@
 	(name "instances_file_name")
 	(string_value "Figwheel.pins"))
 
+([KB_324716_Class297] of  Map
+
+	(entries
+		[KB_324716_Class298]
+		[KB_324716_Class299]
+		[KB_324716_Class300]))
+
+([KB_324716_Class298] of  Map_Entry
+
+	(key "suppress_instance_counting")
+	(key_class "java.lang.String")
+	(value "false")
+	(value_class "java.lang.String"))
+
+([KB_324716_Class299] of  Map_Entry
+
+	(key "add_name_on_instance_form")
+	(key_class "java.lang.String")
+	(value "false")
+	(value_class "java.lang.String"))
+
+([KB_324716_Class300] of  Map_Entry
+
+	(key "change_tracking_active")
+	(key_class "java.lang.String")
+	(value "false")
+	(value_class "java.lang.String"))
+
 ([LAYOUT_PROPERTIES] of  Property_List
 
 	(name "layout properties")
@@ -1070,7 +1185,8 @@
 		[Figwheel_ProjectKB_Class10233]
 		[Figwheel_ProjectKB_Class240]
 		[STANDARD_FACET_FORM_WIDGET]
-		[PAL_FORM_WIDGET])
+		[PAL_FORM_WIDGET]
+		[Figwheel_ProjectKB_Class306])
 	(default_cls_metaclass ":STANDARD-CLASS")
 	(default_facet_metaclass ":STANDARD-FACET")
 	(default_instance_widget_class_name "edu.stanford.smi.protege.widget.FormWidget")

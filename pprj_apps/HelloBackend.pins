@@ -1,4 +1,4 @@
-; Thu Dec 07 11:32:34 MSK 2023
+; Mon Dec 11 11:19:08 MSK 2023
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -46,22 +46,22 @@
 	(source "(:require \n  [ajax.core :refer [GET]])")
 	(title "hello.frontend"))
 
-([HelloBackend_Class10003] of  CloFunction
+([HelloBackend_Class10003] of  CljsFunction
 
 	(source "(js/document.getElementById id)")
 	(title "get-element [id]"))
 
-([HelloBackend_Class10004] of  CloFunction
+([HelloBackend_Class10004] of  CljsFunction
 
 	(source "(set! (.-innerHTML (get-element id)) html)")
 	(title "set-element [id html]"))
 
-([HelloBackend_Class10005] of  CloFunction
+([HelloBackend_Class10005] of  CljsFunction
 
 	(source "(set-element \"bkd\" (str \"<h2>\" response \"</h2>\"))")
 	(title "handler [response]"))
 
-([HelloBackend_Class10006] of  CloFunction
+([HelloBackend_Class10006] of  CljsFunction
 
 	(source "(GET \"http://localhost:8888/\" \n  {:handler handler\n    :error-handler error-handler})")
 	(title "get-backend []"))

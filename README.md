@@ -30,6 +30,8 @@ $ lein run
 
 3. [Hello Backend](https://www.youtube.com/watch?v=12oEoJJOn30)
 
+*Note on the lessons: When constructing ClojureScript programs for functions, you should create instances of the “CljsFunction” class, and not “CloFunction” as in the videos.*
+
 ## Description 
 
 Used Protege 3.5 version a little bit old. It is *Frame-based*. Recent Protege versions are *OWL-based*. It is superfluous for our purposes.

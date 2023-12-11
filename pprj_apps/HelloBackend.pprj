@@ -1,4 +1,4 @@
-; Thu Dec 07 11:32:34 MSK 2023
+; Mon Dec 11 11:19:08 MSK 2023
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -19,7 +19,7 @@
 
 ([BROWSER_SLOT_NAMES] of  Property_List
 
-	(properties [HelloBackend_ProjectKB_Class20480]))
+	(properties [HelloBackend_ProjectKB_Class493]))
 
 ([CLSES_TAB] of  Widget
 
@@ -56,20 +56,6 @@
 
 	(name "layout properties"))
 
-([HelloBackend_ProjectKB_Class20476] of  Widget
-
-	(height 60)
-	(is_hidden FALSE)
-	(name "source")
-	(property_list [HelloBackend_ProjectKB_Class20477])
-	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
-	(width 200)
-	(x 0)
-	(y 0))
-
-([HelloBackend_ProjectKB_Class20477] of  Property_List
-)
-
 ([HelloBackend_ProjectKB_Class20478] of  Widget
 
 	(height 330)
@@ -83,11 +69,6 @@
 
 ([HelloBackend_ProjectKB_Class20479] of  Property_List
 )
-
-([HelloBackend_ProjectKB_Class20480] of  String
-
-	(name "BackendGUI")
-	(string_value "{BackendGUI}"))
 
 ([HelloBackend_ProjectKB_Class35] of  String
 
@@ -128,6 +109,11 @@
 
 ([HelloBackend_ProjectKB_Class483] of  Property_List
 )
+
+([HelloBackend_ProjectKB_Class493] of  String
+
+	(name "BackendGUI")
+	(string_value "{BackendGUI}"))
 
 ([INSTANCE_ANNOTATION_FORM_WIDGET] of  Widget
 
@@ -253,28 +239,28 @@
 	(name "instances_file_name")
 	(string_value "HelloBackend.pins"))
 
-([KB_524725_Class472] of  Map
+([KB_476726_Class489] of  Map
 
 	(entries
-		[KB_524725_Class473]
-		[KB_524725_Class474]
-		[KB_524725_Class475]))
+		[KB_476726_Class490]
+		[KB_476726_Class491]
+		[KB_476726_Class492]))
 
-([KB_524725_Class473] of  Map_Entry
+([KB_476726_Class490] of  Map_Entry
 
 	(key "suppress_instance_counting")
 	(key_class "java.lang.String")
 	(value "false")
 	(value_class "java.lang.String"))
 
-([KB_524725_Class474] of  Map_Entry
+([KB_476726_Class491] of  Map_Entry
 
 	(key "add_name_on_instance_form")
 	(key_class "java.lang.String")
 	(value "false")
 	(value_class "java.lang.String"))
 
-([KB_524725_Class475] of  Map_Entry
+([KB_476726_Class492] of  Map_Entry
 
 	(key "change_tracking_active")
 	(key_class "java.lang.String")

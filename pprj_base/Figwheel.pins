@@ -1,4 +1,4 @@
-; Mon Dec 04 17:25:25 MSK 2023
+; Mon Dec 11 11:14:33 MSK 2023
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -11,7 +11,8 @@
 		[Figwheel_Class10002]
 		[Figwheel_Class10000]
 		[Figwheel_Class20006]
-		[Figwheel_Class20007])
+		[Figwheel_Class20007]
+		[Figwheel_Class20002])
 	(cloNamespace [Figwheel_Class1])
 	(title "Figwheel Support"))
 
@@ -34,6 +35,11 @@
 
 	(source "([hm inst]\n  (let [prg (sv inst \"cljs-program\")\n         ns (sv prg \"cloNamespace\")\n         main (symbol (sv ns \"title\"))]\n    (start-fig main)))\n([main]\n  (invoke-later\n    (fapi/start {:id \"dev\"\n                      :options {:main main}\n                      :config {:watch-dirs [\"src/cljs\"]\n                                   :css-dirs [\"resources/public/css\"]\n                                   :mode :serve}})))")
 	(title "start-fig"))
+
+([Figwheel_Class20002] of  CloFunction
+
+	(source "(let [save-in \"src/cljs\"\n       refs (.getReferences inst)\n       frms (map #(.getFrame %) refs)\n       is-prg? #(= (.getDirectType %) (cls \"CljsProgram\"))\n       prog (first (filter is-prg? frms))\n       epi (sv prog \"epilogue\")\n       nsi (sv prog \"cloNamespace\")\n       nss (sv nsi \"title\")\n       [nam nsf] (ns-folder-and-name nss)\n       pgr (ProgramGenerator. prog)\n       _ (chk&mk-folder (str save-in SEP nsf))\n       fwr (FileWriter. (str save-in SEP nsf SEP nam \".cljs\"))]\n  (.generateProgram pgr fwr)\n  (if (not (empty? epi))\n    (.write fwr (str \"\\n\" epi)))\n  (.close fwr))")
+	(title "save-ns [hm inst]"))
 
 ([Figwheel_Class20006] of  CloFunction
 

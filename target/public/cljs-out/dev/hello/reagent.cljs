@@ -34,3 +34,4 @@
 
 
 (enable-console-print!)
+(run)

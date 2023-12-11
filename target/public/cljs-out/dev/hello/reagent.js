@@ -17,8 +17,8 @@ var time_str = cljs.core.first.call(null,clojure.string.split.call(null,cljs.cor
 return new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div.example-clock","div.example-clock",1559289088),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"style","style",-496642736),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"color","color",1011675173),cljs.core.deref.call(null,hello.reagent.time_color)], null)], null),time_str], null);
 });
 hello.reagent.color_input = (function hello$reagent$color_input(){
-return new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div.color-input","div.color-input",-879914246),"Color: ",new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"input","input",556931961),new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"type","type",1174270348),"text",new cljs.core.Keyword(null,"value","value",305978217),cljs.core.deref.call(null,hello.reagent.time_color),new cljs.core.Keyword(null,"on-change","on-change",-732046149),(function (p1__13744_SHARP_){
-return cljs.core.reset_BANG_.call(null,hello.reagent.time_color,p1__13744_SHARP_.target.value);
+return new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div.color-input","div.color-input",-879914246),"Color: ",new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"input","input",556931961),new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"type","type",1174270348),"text",new cljs.core.Keyword(null,"value","value",305978217),cljs.core.deref.call(null,hello.reagent.time_color),new cljs.core.Keyword(null,"on-change","on-change",-732046149),(function (p1__10271_SHARP_){
+return cljs.core.reset_BANG_.call(null,hello.reagent.time_color,p1__10271_SHARP_.target.value);
 })], null)], null)], null);
 });
 hello.reagent.simple_example = (function hello$reagent$simple_example(){
@@ -28,5 +28,6 @@ hello.reagent.run = (function hello$reagent$run(){
 return reagent.dom.render.call(null,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [hello.reagent.simple_example], null),document.getElementById("app"));
 });
 cljs.core.enable_console_print_BANG_.call(null);
+hello.reagent.run.call(null);
 
 //# sourceMappingURL=reagent.js.map

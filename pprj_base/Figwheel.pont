@@ -1,4 +1,4 @@
-; Mon Dec 04 17:25:25 MSK 2023
+; Mon Dec 11 11:14:33 MSK 2023
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -7,6 +7,11 @@
 (defclass %3ACLIPS_TOP_LEVEL_SLOT_CLASS "Fake class to save top-level slot information"
 	(is-a USER)
 	(role abstract)
+	(single-slot butt-save-ns
+		(type STRING)
+;+		(value "Save Namespace/support.figwheel/save-ns")
+;+		(cardinality 0 1)
+		(create-accessor read-write))
 	(single-slot cljs-program
 		(type INSTANCE)
 ;+		(allowed-classes CljsProgram)
@@ -51,6 +56,15 @@
 	(single-slot butt-save-css
 		(type STRING)
 ;+		(value "save CSS/support.figwheel/save-css")
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass CljsFunction
+	(is-a CloFunction)
+	(role concrete)
+	(single-slot butt-save-ns
+		(type STRING)
+;+		(value "Save Namespace/support.figwheel/save-ns")
 ;+		(cardinality 0 1)
 		(create-accessor read-write)))
 

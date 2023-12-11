@@ -1,4 +1,4 @@
-; Sun Dec 10 21:24:31 MSK 2023
+; Mon Dec 11 11:16:48 MSK 2023
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -17,7 +17,7 @@
 		[HelloReagent_Class10003]
 		[HelloReagent_Class10004])
 	(css [HelloReagent_Class10001])
-	(epilogue "(enable-console-print!)")
+	(epilogue "(enable-console-print!)\n(run)")
 	(html [HelloReagent_Class10000])
 	(title "Hello Reagent"))
 
@@ -29,7 +29,7 @@
 ([HelloReagent_Class10000] of  HTML
 
 	(save-in "resources/public")
-	(source "<!doctype html>\n<html>\n  <head>\n    <meta charset=\"utf-8\">\n    <title>Hello Reagent</title>\n    <link rel=\"stylesheet\" href=\"css/hello_reagent.css\">\n  </head>\n  <body>\n    <div id=\"app\">\n      <h1>Hello Reagent!</h1>\n    </div>\n    <script src=\"cljs-out/dev-main.js\"></script>\n    <script>\n      hello.reagent.run();\n    </script>\n  </body>\n</html>")
+	(source "<!doctype html>\n<html>\n  <head>\n    <meta charset=\"utf-8\">\n    <title>Hello Reagent</title>\n    <link rel=\"stylesheet\" href=\"css/hello_reagent.css\">\n  </head>\n  <body>\n    <div id=\"app\">\n      <h1>Hello Reagent!</h1>\n    </div>\n    <script src=\"cljs-out/dev-main.js\"></script>\n  </body>\n</html>")
 	(title "index"))
 
 ([HelloReagent_Class10001] of  CSS
@@ -53,27 +53,27 @@
 	(source "(defonce time-updater (js/setInterval\n  #(reset! timer (js/Date.)) 1000))")
 	(title "TIME-UPDATER"))
 
-([HelloReagent_Class10005] of  CloFunction
+([HelloReagent_Class10005] of  CljsFunction
 
 	(source "[:h1 message]")
 	(title "greeting [message]"))
 
-([HelloReagent_Class10006] of  CloFunction
+([HelloReagent_Class10006] of  CljsFunction
 
 	(source "(let [time-str (-> @timer .toTimeString (str/split \" \") first)]\n    [:div.example-clock\n    {:style {:color @time-color}}\n    time-str])")
 	(title "clock []"))
 
-([HelloReagent_Class10007] of  CloFunction
+([HelloReagent_Class10007] of  CljsFunction
 
 	(source "[:div.color-input\n \"Color: \"\n [:input {:type \"text\"\n             :value @time-color\n             :on-change #(reset! time-color (-> % .-target .-value))}]]")
 	(title "color-input []"))
 
-([HelloReagent_Class10008] of  CloFunction
+([HelloReagent_Class10008] of  CljsFunction
 
 	(source "[:div\n   [greeting \"Current Time\"]\n   [clock]\n   [color-input]]")
 	(title "simple-example []"))
 
-([HelloReagent_Class10009] of  CloFunction
+([HelloReagent_Class10009] of  CljsFunction
 
 	(source "(rdom/render [simple-example] (js/document.getElementById \"app\"))")
 	(title "run []"))

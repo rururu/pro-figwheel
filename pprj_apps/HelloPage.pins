@@ -1,4 +1,4 @@
-; Wed Dec 06 18:45:21 MSK 2023
+; Mon Dec 11 11:20:07 MSK 2023
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -36,17 +36,17 @@
 	(cljs-program [HelloPage_Class0])
 	(title "FigwheelController"))
 
-([HelloPage_Class5] of  CloFunction
+([HelloPage_Class5] of  CljsFunction
 
 	(source "(js/document.getElementById id)")
 	(title "get-element [id]"))
 
-([HelloPage_Class6] of  CloFunction
+([HelloPage_Class6] of  CljsFunction
 
 	(source "(set! (.-innerHTML (get-element id)) html)")
 	(title "set-element [id html]"))
 
-([HelloPage_Class7] of  CloFunction
+([HelloPage_Class7] of  CljsFunction
 
 	(source "(set-element \"app\" html)")
 	(title "update-page [html]"))
