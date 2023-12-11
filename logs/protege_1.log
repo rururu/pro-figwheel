@@ -55,3 +55,7 @@
 2023.12.10 13:35:01.205 MSK INFO: *** SYSTEM START ***
 2023.12.10 13:35:01.956 MSK WARNING: missing bundle: protege_text -- BundleHelper.<init>()
 2023.12.10 13:36:22.326 MSK INFO: Load time for file:/home/ru/clojure/pro-figwheel/pprj_apps/HelloHelix.pprj = 0 sec (project) + 0 sec (ui) -- ProjectManager$3.run()
+2023.12.11 13:36:48.270 MSK INFO: *** SYSTEM START ***
+2023.12.11 13:36:48.454 MSK WARNING: missing bundle: protege_text -- BundleHelper.<init>()
+2023.12.11 13:37:07.542 MSK SEVERE: Unable to load project from: file:/home/ru/clojure/pro-figwheel/examples/newspaper/newspaper.pprj -- Project.getProjectInstancesReader()
+2023.12.11 13:37:08.065 MSK INFO: Load time for file:/home/ru/clojure/pro-figwheel/examples/newspaper/newspaper.pprj = 0 sec (project) + 0 sec (ui) -- ProjectManager$3.run()
