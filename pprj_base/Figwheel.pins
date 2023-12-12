@@ -1,4 +1,4 @@
-; Mon Dec 11 11:14:33 MSK 2023
+; Tue Dec 12 10:59:11 MSK 2023
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -12,13 +12,15 @@
 		[Figwheel_Class10000]
 		[Figwheel_Class20006]
 		[Figwheel_Class20007]
-		[Figwheel_Class20002])
+		[Figwheel_Class20002]
+		[Figwheel_Class20000]
+		[Figwheel_Class30003])
 	(cloNamespace [Figwheel_Class1])
 	(title "Figwheel Support"))
 
 ([Figwheel_Class1] of  CloNamespace
 
-	(source "(:use protege.core)\n(:require\n  [figwheel.main.api :as fapi])\n(:import\n  java.io.FileWriter\n  clojuretab.ProgramGenerator)")
+	(source "(:use \n  protege.core)\n(:require\n  [figwheel.main.api :as fapi]\n  [clojure.java.io :as io])\n(:import\n  java.io.FileWriter\n  clojuretab.ProgramGenerator)")
 	(title "support.figwheel"))
 
 ([Figwheel_Class10000] of  CloFunction
@@ -35,6 +37,11 @@
 
 	(source "([hm inst]\n  (let [prg (sv inst \"cljs-program\")\n         ns (sv prg \"cloNamespace\")\n         main (symbol (sv ns \"title\"))]\n    (start-fig main)))\n([main]\n  (invoke-later\n    (fapi/start {:id \"dev\"\n                      :options {:main main}\n                      :config {:watch-dirs [\"src/cljs\"]\n                                   :css-dirs [\"resources/public/css\"]\n                                   :mode :serve}})))")
 	(title "start-fig"))
+
+([Figwheel_Class20000] of  CloFunction
+
+	(source "(if (string? file-or-path)\n  (clear-dir (io/file file-or-path))\n  (do\n    (when (.isDirectory file-or-path)\n      (run! clear-dir (.listFiles file-or-path)))\n    (io/delete-file file-or-path)))")
+	(title "clear-dir [file-or-path]"))
 
 ([Figwheel_Class20002] of  CloFunction
 
@@ -66,3 +73,11 @@
 
 	(source "(fapi/stop \"dev\")")
 	(title "stop-fig [hm inst]"))
+
+([Figwheel_Class30003] of  CloFunction
+
+	(source "(doseq [f (.listFiles (io/file \"src/cljs\"))]\n  (println (.getPath f))\n  (clear-dir f))\n(println \"Folder \\\"src/cljs\\\" cleared!\")")
+	(title "clear-cljs [hm inst]"))
+
+([Figwheel_Class30004] of  FigwheelController
+)

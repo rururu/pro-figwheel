@@ -1,7 +1,9 @@
 (ns support.figwheel
-(:use protege.core)
+(:use 
+  protege.core)
 (:require
-  [figwheel.main.api :as fapi])
+  [figwheel.main.api :as fapi]
+  [clojure.java.io :as io])
 (:import
   java.io.FileWriter
   clojuretab.ProgramGenerator))
@@ -68,4 +70,18 @@
   (if (not (empty? epi))
     (.write fwr (str "\n" epi)))
   (.close fwr)))
+
+(defn clear-dir [file-or-path]
+  (if (string? file-or-path)
+  (clear-dir (io/file file-or-path))
+  (do
+    (when (.isDirectory file-or-path)
+      (run! clear-dir (.listFiles file-or-path)))
+    (io/delete-file file-or-path))))
+
+(defn clear-cljs [hm inst]
+  (doseq [f (.listFiles (io/file "src/cljs"))]
+  (println (.getPath f))
+  (clear-dir f))
+(println "Folder \"src/cljs\" cleared!"))
 

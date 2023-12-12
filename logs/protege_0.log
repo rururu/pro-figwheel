@@ -204,3 +204,39 @@
 2023.12.11 11:19:15.615 MSK INFO: UI display time = 0 sec -- ProjectManager$2.run()
 2023.12.11 11:20:19.573 MSK INFO: Project load time for file:/home/ru/clojure/pro-figwheel/pprj_apps/HelloWorld.pprj: 0 sec -- ProjectChooser.loadProject()
 2023.12.11 11:20:19.838 MSK INFO: UI display time = 0 sec -- ProjectManager$2.run()
+2023.12.11 16:40:15.495 MSK INFO: *** SYSTEM START ***
+2023.12.11 16:40:15.681 MSK WARNING: missing bundle: protege_text -- BundleHelper.<init>()
+2023.12.11 16:42:43.694 MSK INFO: Load time for file:/home/ru/clojure/pro-figwheel/pprj_apps/HelloArttuka.pprj = 0 sec (project) + 0 sec (ui) -- ProjectManager$3.run()
+2023.12.11 17:59:56.804 MSK INFO: *** SYSTEM START ***
+2023.12.11 17:59:56.999 MSK WARNING: missing bundle: protege_text -- BundleHelper.<init>()
+2023.12.11 18:00:06.649 MSK INFO: Load time for file:/home/ru/clojure/pro-figwheel/pprj_apps/HelloArttuka.pprj = 0 sec (project) + 4 sec (ui) -- ProjectManager$3.run()
+2023.12.11 18:01:35.085 MSK INFO: *** SYSTEM START ***
+2023.12.11 18:01:35.282 MSK WARNING: missing bundle: protege_text -- BundleHelper.<init>()
+2023.12.11 18:01:43.407 MSK INFO: Load time for file:/home/ru/clojure/pro-figwheel/pprj_apps/HelloArttuka.pprj = 0 sec (project) + 4 sec (ui) -- ProjectManager$3.run()
+2023.12.11 18:03:19.835 MSK INFO: *** SYSTEM START ***
+2023.12.11 18:03:20.030 MSK WARNING: missing bundle: protege_text -- BundleHelper.<init>()
+2023.12.11 18:03:28.194 MSK INFO: Load time for file:/home/ru/clojure/pro-figwheel/pprj_apps/HelloArttuka.pprj = 0 sec (project) + 4 sec (ui) -- ProjectManager$3.run()
+2023.12.11 18:06:02.054 MSK INFO: *** SYSTEM START ***
+2023.12.11 18:06:02.266 MSK WARNING: missing bundle: protege_text -- BundleHelper.<init>()
+2023.12.11 18:06:09.337 MSK INFO: Load time for file:/home/ru/clojure/pro-figwheel/pprj_apps/HelloArttuka.pprj = 0 sec (project) + 4 sec (ui) -- ProjectManager$3.run()
+2023.12.11 19:36:55.461 MSK INFO: *** SYSTEM START ***
+2023.12.11 19:36:55.643 MSK WARNING: missing bundle: protege_text -- BundleHelper.<init>()
+2023.12.11 19:37:03.283 MSK INFO: Load time for file:/home/ru/clojure/pro-figwheel/pprj_apps/HelloArttuka.pprj = 0 sec (project) + 4 sec (ui) -- ProjectManager$3.run()
+2023.12.11 20:06:57.020 MSK INFO: *** SYSTEM START ***
+2023.12.11 20:06:57.204 MSK WARNING: missing bundle: protege_text -- BundleHelper.<init>()
+2023.12.11 20:07:04.996 MSK INFO: Load time for file:/home/ru/clojure/pro-figwheel/pprj_apps/HelloArttuka.pprj = 0 sec (project) + 4 sec (ui) -- ProjectManager$3.run()
+2023.12.12 09:47:57.834 MSK INFO: *** SYSTEM START ***
+2023.12.12 09:47:58.532 MSK WARNING: missing bundle: protege_text -- BundleHelper.<init>()
+2023.12.12 09:48:09.913 MSK INFO: Load time for file:/home/ru/clojure/pro-figwheel/pprj_apps/HelloArttuka.pprj = 0 sec (project) + 5 sec (ui) -- ProjectManager$3.run()
+2023.12.12 10:03:47.250 MSK INFO: Project load time for file:/home/ru/clojure/pro-figwheel/pprj_base/Figwheel.pprj: 0 sec -- ProjectChooser.loadProject()
+2023.12.12 10:03:47.458 MSK INFO: UI display time = 0 sec -- ProjectManager$2.run()
+2023.12.12 10:59:38.379 MSK INFO: *** SYSTEM START ***
+2023.12.12 10:59:38.569 MSK WARNING: missing bundle: protege_text -- BundleHelper.<init>()
+2023.12.12 10:59:55.876 MSK INFO: Project load time for file:/home/ru/clojure/pro-figwheel/pprj_apps/HelloWorld.pprj: 0 sec -- ProjectChooser.loadProject()
+2023.12.12 11:00:00.056 MSK INFO: UI display time = 4 sec -- ProjectManager$2.run()
+2023.12.12 11:06:37.893 MSK INFO: *** SYSTEM START ***
+2023.12.12 11:06:38.103 MSK WARNING: missing bundle: protege_text -- BundleHelper.<init>()
+2023.12.12 11:06:48.717 MSK INFO: Load time for file:/home/ru/clojure/pro-figwheel/pprj_apps/HelloArttuka.pprj = 0 sec (project) + 4 sec (ui) -- ProjectManager$3.run()
+2023.12.12 11:09:43.861 MSK INFO: *** SYSTEM START ***
+2023.12.12 11:09:44.085 MSK WARNING: missing bundle: protege_text -- BundleHelper.<init>()
+2023.12.12 11:09:52.333 MSK INFO: Load time for file:/home/ru/clojure/pro-figwheel/pprj_apps/HelloArttuka.pprj = 0 sec (project) + 4 sec (ui) -- ProjectManager$3.run()

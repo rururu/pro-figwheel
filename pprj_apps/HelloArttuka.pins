@@ -1,0 +1,207 @@
+; Tue Dec 12 11:51:45 MSK 2023
+; 
+;+ (version "3.5")
+;+ (build "Build 663")
+
+([HelloArttuka_Class0] of  CljsProgram
+
+	(cloFunctions
+		[HelloArttuka_Class2]
+		[HelloArttuka_Class9]
+		[HelloArttuka_Class10]
+		[HelloArttuka_Class11]
+		[HelloArttuka_Class12]
+		[HelloArttuka_Class13]
+		[HelloArttuka_Class14]
+		[HelloArttuka_Class15]
+		[HelloArttuka_Class17]
+		[HelloArttuka_Class19]
+		[HelloArttuka_Class21])
+	(cloNamespace [HelloArttuka_Class1])
+	(cloVars
+		[HelloArttuka_Class3]
+		[HelloArttuka_Class4]
+		[HelloArttuka_Class5])
+	(documentation [HelloArttuka_Class20000])
+	(epilogue "(run)")
+	(html [HelloArttuka_Class20])
+	(title "Hello Arttuka"))
+
+([HelloArttuka_Class1] of  CloNamespace
+
+	(source "(:require-macros [reagent-mui.util :refer [react-component]])\n(:require [react :as react]\n            [reagent.core :as r]\n            [reagent.dom.client :as rdom]\n            [reagent-mui.cljs-time-adapter :refer [cljs-time-adapter]]\n            [reagent-mui.colors :as colors]\n            [reagent-mui.material.button :refer [button]]\n            [reagent-mui.material.chip :refer [chip]]\n            [reagent-mui.material.css-baseline :refer [css-baseline]]\n            [reagent-mui.material.input-adornment :refer [input-adornment]]\n            [reagent-mui.material.menu-item :refer [menu-item]]\n            [reagent-mui.material.stack :refer [stack]]\n            [reagent-mui.material.text-field :refer [text-field]]\n            [reagent-mui.material.toolbar :refer [toolbar]]\n            [reagent-mui.material.typography :refer [typography]]\n            [reagent-mui.icons.add-box :refer [add-box]]\n            [reagent-mui.icons.clear :refer [clear]]\n            [reagent-mui.icons.face :refer [face]]\n            [reagent-mui.icons.face-outlined :refer [face-outlined]]\n            [reagent-mui.icons.anchor :refer [anchor]]\n            ;;[reagent-mui.x.date-picker :refer [date-picker]]\n            ;;[reagent-mui.x.localization-provider :refer [localization-provider]]\n            [reagent-mui.styles :as styles]\n            [hello.arttuka.autocomplete :refer [autocomplete]]\n            [hello.arttuka.select :as select]\n            ;;[hello.arttuka.data-grid :as data-grid]\n            [\"@mui/material/TextField\" :as MuiTextField])")
+	(title "hello.arttuka"))
+
+([HelloArttuka_Class10] of  CljsFunction
+
+	(source "[text-field\n    {:value       @text-state\n     :label       \"Text input\"\n     :placeholder \"Placeholder\"\n     :helper-text \"Helper text\"\n     :class       (:text-field CLASSES)\n     :on-change   (fn [e]\n                    (reset! text-state (event-value e)))}]")
+	(title "tf-text-input []"))
+
+([HelloArttuka_Class10000] of  CljsProgram
+
+	(cloFunctions [HelloArttuka_Class10003])
+	(cloNamespace [HelloArttuka_Class10001])
+	(cloVars [HelloArttuka_Class10002])
+	(title "Arttuka Autocomplete"))
+
+([HelloArttuka_Class10001] of  CloNamespace
+
+	(source "(:require-macros [reagent-mui.util :refer [react-component]])\n(:require [reagent.core :as r]\n            [reagent-mui.material.autocomplete :refer [autocomplete] :rename {autocomplete mui-autocomplete}]\n            [reagent-mui.material.text-field :refer [text-field]])")
+	(title "hello.arttuka.autocomplete"))
+
+([HelloArttuka_Class10002] of  CloVar
+
+	(source "(clj->js [{:label \"Denmark\"\n                        :code  \"dk\"\n                        :flag  \"\\uD83C\\uDDE9\\uD83C\\uDDF0\"}\n                       {:label \"Finland\"\n                        :code  \"fi\"\n                        :flag  \"\\uD83C\\uDDEB\\uD83C\\uDDEE\"}\n                       {:label \"France\"\n                        :code  \"fr\"\n                        :flag  \"\\uD83C\\uDDEB\\uD83C\\uDDF7\"}\n                       {:label \"Germany\"\n                        :code  \"de\"\n                        :flag  \"\\uD83C\\uDDE9\\uD83C\\uDDEA\"}\n                       {:label \"Iceland\"\n                        :code  \"is\"\n                        :flag  \"\\uD83C\\uDDEE\\uD83C\\uDDF8\"}\n                       {:label \"Italy\"\n                        :code  \"it\"\n                        :flag  \"\\uD83C\\uDDEE\\uD83C\\uDDF9\"}\n                       {:label \"Norway\"\n                        :code  \"no\"\n                        :flag  \"\\uD83C\\uDDF3\\uD83C\\uDDF4\"}\n                       {:label \"Spain\"\n                        :code  \"es\"\n                        :flag  \"\\uD83C\\uDDEA\\uD83C\\uDDF8\"}\n                       {:label \"Sweden\"\n                        :code  \"se\"\n                        :flag  \"\\uD83C\\uDDF8\\uD83C\\uDDEA\"}\n                       {:label \"United Kingdom\"\n                        :code  \"gb\"\n                        :flag  \"\\uD83C\\uDDEC\\uD83C\\uDDE7\"}])")
+	(title "OPTIONS"))
+
+([HelloArttuka_Class10003] of  CljsFunction
+
+	(source "[mui-autocomplete {:id \"autocomplete-demo\"\n                                :class class\n                                :options OPTIONS\n                                :value value\n                                :on-change (fn [event new-value]\n                                      (on-change new-value))\n                                :render-input  (react-component [props]\n                                      [text-field (merge props\n                                                         {:label \"Autocomplete\"})])\n                                :render-option (react-component [props option]\n                                      [:li props\n                                       (:flag option)\n                                       (:label option)])}]")
+	(title "autocomplete [{:keys [class value on-change]}]"))
+
+([HelloArttuka_Class10004] of  CljsProgram
+
+	(cloNamespace [HelloArttuka_Class10005])
+	(cloVars
+		[HelloArttuka_Class10006]
+		[HelloArttuka_Class10007]
+		[HelloArttuka_Class10008]
+		[HelloArttuka_Class10009]
+		[HelloArttuka_Class10010])
+	(title "Arttuka Select"))
+
+([HelloArttuka_Class10005] of  CloNamespace
+
+	(source "(:require-macros [reagent-mui.util :refer [react-component]])\n(:require [reagent.core :as r]\n            [reagent-mui.styles :as styles]\n            [reagent-mui.base.select-unstyled-context :refer [select-unstyled-context-provider]]\n            [reagent-mui.base.use-option :refer [use-option]]\n            [reagent-mui.base.use-select :refer [use-select]]\n            [reagent-mui.util :refer [use-effect use-ref use-state js->clj']])")
+	(title "hello.arttuka.select"))
+
+([HelloArttuka_Class10006] of  CloVar
+
+	(source "(styles/styled \"div\" {:position \"relative\"})")
+	(title "ROOT"))
+
+([HelloArttuka_Class10007] of  CloVar
+
+	(source "(styles/styled \"div\" {:width            256\n                                  :border           \"1px solid #CDD2D7\"\n                                  :background-color \"var(--color, white)\"\n                                  :padding          10\n                                  :display          \"inline-flex\"\n                                  :align-items      \"center\"\n                                  :justify-content  \"center\"\n                                  \"& .placeholder\"  {:opacity \"0.8\"}})")
+	(title "TOGGLE"))
+
+([HelloArttuka_Class10008] of  CloVar
+
+	(source "(styles/styled \"div\" {:padding    5\n                                   :list-style \"none\"\n                                   :position   \"absolute\"\n                                   :width      \"100%\"\n                                   :border     \"1px solid #CDD2D7\"\n                                   :outline    0\n                                   \"&.hidden\"  {:opacity    0\n                                                :visibility \"hidden\"\n                                                :transition \"opacity 0.4s 0.5s ease, visibility 0.4s 0.5s step-end\"}\n                                   \"& > li\"    {:padding                  8\n                                                \"&:hover\"                 {:background-color \"#E7EBF0\"}\n                                                \"&[aria-selected='true']\" {:background-color \"#E0E3E7\"}}})")
+	(title "LISTBOX"))
+
+([HelloArttuka_Class10009] of  CloVar
+
+	(source "(react-component [{:keys [value children]}]\n              (let [{:keys [get-root-props highlighted]} (use-option {:value    value\n                                                                      :disabled false})]\n                [:li.foobar (merge (js->clj' (get-root-props))\n                                   {:class-name (when highlighted \"highlighted\")})\n                 children]))")
+	(title "OPTION"))
+
+([HelloArttuka_Class10010] of  CloVar
+
+	(source "(react-component [{:keys [options placeholder]}]\n                 (let [listbox-ref (use-ref nil)\n                       [listbox-visible? set-listbox-visible] (use-state false)\n                       {:keys [get-button-props get-listbox-props context-value value]} (use-select {:listbox-ref listbox-ref\n                                                                                                     :options     options})]\n                   (use-effect #(do (when listbox-visible?\n                                      (some-> (.-current listbox-ref) (.focus)))\n                                    js/undefined)\n                               #js [listbox-visible?])\n                   [ROOT {:on-mouse-over #(set-listbox-visible true)\n                          :on-mouse-out  #(set-listbox-visible false)\n                          :on-focus      #(set-listbox-visible true)\n                          :on-blur       #(set-listbox-visible false)}\n                    [TOGGLE (merge {:style {\"--color\" value}}\n                                   (js->clj' (get-button-props)))\n                     (or value [:span.placeholder placeholder])]\n                    [LISTBOX (merge {:class-name (when-not listbox-visible? \"hidden\")}\n                                    (js->clj' (get-listbox-props)))\n                     [select-unstyled-context-provider {:value context-value}\n                      (for [{:keys [value label]} options]\n                        ^{:key value} [:> OPTION {:value value}\n                                       label])]]]))")
+	(title "component"))
+
+([HelloArttuka_Class10011] of  CljsProgram
+
+	(cloNamespace [HelloArttuka_Class10012])
+	(title "Arttuka Data Grid"))
+
+([HelloArttuka_Class10012] of  CloNamespace
+
+	(source "(:require \n  [reagent.core :as r]\n  [reagent-mui.x.data-grid :refer [data-grid]]\n  [reagent-mui.util :refer [clj->js' wrap-clj-function]])")
+	(title "hello.arttuka.data-grid"))
+
+([HelloArttuka_Class11] of  CljsFunction
+
+	(source "[text-field\n    {:value       @text-state\n     :label       \"Text with Adornment\"\n     :placeholder \"Placeholder\"\n     :helper-text \"Helper text\"\n     :class       (:text-field CLASSES)\n     :on-change   (fn [e]\n                    (reset! text-state (event-value e)))\n     :InputProps  {:end-adornment \n                           (r/as-element\n                             [input-adornment {:position \"end\"} \"Baz\"])}}]")
+	(title "tf-text-with-adornment []"))
+
+([HelloArttuka_Class12] of  CljsFunction
+
+	(source "[text-field\n    {:value       @text-state\n     :label       \"Textarea\"\n     :placeholder \"Placeholder\"\n     :helper-text \"Helper text\"\n     :class       (:text-field CLASSES)\n     :on-change   (fn [e]\n                    (reset! text-state (event-value e)))\n     :multiline   true\n     :rows        10}]")
+	(title "tf-textarea []"))
+
+([HelloArttuka_Class13] of  CljsFunction
+
+	(source "[text-field\n    {:id        :textarea-autosize\n     :value     @text-state\n     :label     \"Autosized textarea\"\n     :class     (:text-field CLASSES)\n     :on-change (fn [e]\n                  (reset! text-state (event-value e)))\n     :multiline true\n     :min-rows  2\n     :max-rows  10}]")
+	(title "tf-autosized-textarea []"))
+
+([HelloArttuka_Class14] of  CljsFunction
+
+	(source "[text-field\n    {:value       @select-state\n     :label       \"Select\"\n     :placeholder \"Placeholder\"\n     :helper-text \"Helper text\"\n     :class       (:text-field CLASSES)\n     :on-change   (fn [e]\n                    (reset! select-state (event-value e)))\n     :select      true}\n    [menu-item\n     {:value 1}\n     \"Item 1\"]\n    [menu-item\n     {:value 2}\n     \"Item 2\"]]")
+	(title "tf-select []"))
+
+([HelloArttuka_Class15] of  CljsFunction
+
+	(source "[stack {:direction :row\n           :spacing   2}\n    [chip {:icon  (r/as-element [face])\n           :label \"Icon element example, r/as-element\"}]\n    [chip {:icon  (r/as-element [face-outlined])\n           :label \"Another example icon\"}]]")
+	(title "icons []"))
+
+([HelloArttuka_Class16] of  CljsFunction
+
+	(source "[date-picker {:value     @date-picker-state\n                 :on-change (fn [value]\n                              (reset! date-picker-state value))\n                 :format    \"MM/dd/yyyy\"\n                 :label     \"Date picker\"}]")
+	(title "date-picker []"))
+
+([HelloArttuka_Class17] of  CljsFunction
+
+	(source "[autocomplete {:class  (:text-field CLASSES)\n                          :value  @autocomplete-state\n                          :on-change (fn [new-value]\n                               (reset! autocomplete-state new-value))}]")
+	(title "autocompl []"))
+
+([HelloArttuka_Class18] of  CljsFunction
+
+	(source "[stack {:direction \"column\"\n             :spacing   2}\n   [typography {:variant :h5} \"Data Grid\"]\n   [data-grid/component]\n   [stack {:direction :row\n                :spacing   2}\n      [:> select/component \n        {:options [{:label \"Red\"\n                           :value \"#D32F2F\"}\n                         {:label \"Blue\" \n                           :value \"#2196F3\"}]\n          :placeholder \"Select a color\"}]]]")
+	(title "data-grid []"))
+
+([HelloArttuka_Class19] of  CljsFunction
+
+	(source "[:div\n [css-baseline]\n [styles/theme-provider (styles/create-theme CUSTOM-THEME)\n   [stack {:direction :column\n              :alignItems :stretch\n              :spacing 2\n              :p 2}\n      [toolbarr]\n      [tf-text-input]\n      [tf-text-with-adornment]\n      [tf-textarea]\n      [tf-autosized-textarea]\n      [tf-select]\n      [icons]\n      [autocompl]]]]")
+	(title "main []"))
+
+([HelloArttuka_Class2] of  CljsFunction
+
+	(source "(.. e -target -value)")
+	(title "event-value [e]"))
+
+([HelloArttuka_Class20] of  HTML
+
+	(save-in "resources/public")
+	(source "<!doctype html>\n<html>\n  <head>\n    <meta charset=\"utf-8\">\n    <title>Hello Arttuka</title>\n  </head>\n  <body>\n    <div id=\"app\">\n      <h1>Hello Arttuka!</h1>\n    </div>\n    <script src=\"cljs-out/dev-main.js\"></script>\n    <script>\n      hello.arttuka.run();\n    </script>\n  </body>\n</html>")
+	(title "index"))
+
+([HelloArttuka_Class20000] of  CloDocumentation
+
+	(source "<html>\n  <head>\n    <style type=\"text/css\">\n      <!--\n        body { font-family: arial; font-size: 12pt }\n        p { font-family: arial; margin-top: 2; margin-right: 2; margin-bottom: 2; margin-left: 2 }\n      -->\n    </style>\n    \n  </head>\n  <body>\n          <b>Github: arttuka / reagent-material-ui / example/src/example/core.cljs</b><br>      <br>      (ns ^:figwheel-hooks example.core<br>        (:require-macros [reagent-mui.util :refer [react-component]])<br>        (:require [react :as react]<br>                  [reagent.core :as r]<br>                  [reagent.dom.client :as rdom]<br>                  [reagent-mui.cljs-time-adapter :refer [cljs-time-adapter]]<br>                  [reagent-mui.colors :as colors]<br>                  [reagent-mui.material.button :refer [button]]<br>                  [reagent-mui.material.chip :refer [chip]]<br>                  [reagent-mui.material.css-baseline :refer [css-baseline]]<br>                  [reagent-mui.material.input-adornment :refer   [input-adornment]]<br>                  [reagent-mui.material.menu-item :refer [menu-item]]<br>                  [reagent-mui.material.stack :refer [stack]]<br>                  [reagent-mui.material.text-field :refer [text-field]]<br>                  [reagent-mui.material.toolbar :refer [toolbar]]<br>                  [reagent-mui.material.typography :refer [typography]]<br>                  [reagent-mui.icons.add-box :refer [add-box]]<br>                  [reagent-mui.icons.clear :refer [clear]]<br>                  [reagent-mui.icons.face :refer [face]]<br>                  [reagent-mui.icons.face-outlined :refer [face-outlined]]<br>                  [reagent-mui.x.date-picker :refer [date-picker]]<br>                  [reagent-mui.x.localization-provider :refer   [localization-provider]]<br>                  [reagent-mui.styles :as styles]<br>                  [example.autocomplete :refer [autocomplete]]<br>                  [example.select :as select]<br>                  [example.data-grid :as data-grid]<br>                  [&quot;@mui/material/TextField&quot; :as MuiTextField])<br>        (:import (goog.i18n DateTimeSymbols_en_US)))<br>      <br>      (set! *warn-on-infer* true)<br>      <br>      (defn event-value<br>        [e]<br>        (.. e -target -value))<br>      <br>      ;; Example<br>      <br>      (def custom-theme<br>        {:palette {:primary   colors/purple<br>                   :secondary colors/green}})<br>      <br>      (def classes (let [prefix &quot;rmui-example&quot;]<br>                     {:root       (str prefix &quot;-root&quot;)<br>                      :button     (str prefix &quot;-button&quot;)<br>                      :text-field (str prefix &quot;-text-field&quot;)}))<br>      <br>      (defn custom-styles [{:keys [theme]}]<br>        (let [spacing (:spacing theme)]<br>          {(str &quot;&amp;.&quot; (:root classes))        {:margin-left (spacing 8)<br>                                              :align-items :flex-start}<br>           (str &quot;&amp; .&quot; (:button classes))     {:margin (spacing 1)}<br>           (str &quot;&amp; .&quot; (:text-field classes)) {:width        200<br>                                              :margin-left  (spacing 1)<br>                                              :margin-right (spacing 1)}}))<br>      <br>      (defonce text-state (r/atom &quot;foobar&quot;))<br>      (defonce select-state (r/atom 1))<br>      (defonce date-picker-state (r/atom nil))<br>      (defonce autocomplete-state (r/atom nil))<br>      <br>      (defn form* [{:keys [class-name]}]<br>        [stack {:direction &quot;column&quot;<br>                :spacing   2<br>                :class     [class-name (:root classes)]}<br>      <br>         [toolbar {:disable-gutters true}<br>          [button<br>           {:variant  &quot;contained&quot;<br>            :color    &quot;primary&quot;<br>            :class    (:button classes)<br>            :on-click #(swap! text-state str &quot; foo&quot;)}<br>           &quot;Update value property&quot;<br>           [add-box]]<br>          [button<br>           {:variant  &quot;outlined&quot;<br>            :color    &quot;secondary&quot;<br>            :class    (:button classes)<br>            :on-click (fn []<br>                        (reset! text-state &quot;&quot;)<br>                        (reset! select-state 1)<br>                        (reset! date-picker-state nil)<br>                        (reset! autocomplete-state nil))}<br>           &quot;Reset&quot;<br>           [clear]]]<br>      <br>         [text-field<br>          {:value       @text-state<br>           :label       &quot;Text input&quot;<br>           :placeholder &quot;Placeholder&quot;<br>           :helper-text &quot;Helper text&quot;<br>           :class       (:text-field classes)<br>           :on-change   (fn [e]<br>                          (reset! text-state (event-value e)))}]<br>      <br>         [text-field<br>          {:value       @text-state<br>           :label       &quot;Text with Adornment&quot;<br>           :placeholder &quot;Placeholder&quot;<br>           :helper-text &quot;Helper text&quot;<br>           :class       (:text-field classes)<br>           :on-change   (fn [e]<br>                          (reset! text-state (event-value e)))<br>           :InputProps  {:end-adornment (r/as-element [input-adornment   {:position &quot;end&quot;} &quot;Baz&quot;])}}]<br>      <br>         [text-field<br>          {:value       @text-state<br>           :label       &quot;Textarea&quot;<br>           :placeholder &quot;Placeholder&quot;<br>           :helper-text &quot;Helper text&quot;<br>           :class       (:text-field classes)<br>           :on-change   (fn [e]<br>                          (reset! text-state (event-value e)))<br>           :multiline   true<br>           :rows        10}]<br>      <br>         [text-field<br>          {:id        :textarea-autosize<br>           :value     @text-state<br>           :label     &quot;Autosized textarea&quot;<br>           :class     (:text-field classes)<br>           :on-change (fn [e]<br>                        (reset! text-state (event-value e)))<br>           :multiline true<br>           :min-rows  2<br>           :max-rows  10}]<br>      <br>         [text-field<br>          {:value       @select-state<br>           :label       &quot;Select&quot;<br>           :placeholder &quot;Placeholder&quot;<br>           :helper-text &quot;Helper text&quot;<br>           :class       (:text-field classes)<br>           :on-change   (fn [e]<br>                          (reset! select-state (event-value e)))<br>           :select      true}<br>          [menu-item<br>           {:value 1}<br>           &quot;Item 1&quot;]<br>          [menu-item<br>           {:value 2}<br>           &quot;Item 2&quot;]]<br>      <br>         ;; For properties that require React Node as parameter,<br>         ;; use r/as-element to convert Reagent hiccup forms into React   elements,<br>         ;; or use r/create-element to directly instantiate element from React   class (i.e. non-adapted React component).<br>         [stack {:direction :row<br>                 :spacing   2}<br>          [chip {:icon  (r/as-element [face])<br>                 :label &quot;Icon element example, r/as-element&quot;}]<br>          [chip {:icon  (r/as-element [face-outlined])<br>                 :label &quot;Another example icon&quot;}]]<br>      <br>         [date-picker {:value     @date-picker-state<br>                       :on-change (fn [value]<br>                                    (reset! date-picker-state value))<br>                       :format    &quot;MM/dd/yyyy&quot;<br>                       :label     &quot;Date picker&quot;}]<br>         [autocomplete {:class     (:text-field classes)<br>                        :value     @autocomplete-state<br>                        :on-change (fn [new-value]<br>                                     (reset! autocomplete-state new-value))}]<br>         [typography {:variant :h5} &quot;Data Grid&quot;]<br>         [data-grid/component]<br>         [stack {:direction :row<br>                 :spacing   2}<br>          [:&gt; select/component {:options [{:label &quot;Red&quot; :value &quot;#D32F2F&quot;}<br>                                          {:label &quot;Blue&quot; :value &quot;#2196F3&quot;}]<br>                                :placeholder &quot;Select a color&quot;}]]])<br>      <br>      (def form (styles/styled form* custom-styles))<br>      <br>      (defn main []<br>        ;; fragment<br>        [:&lt;&gt;<br>         [css-baseline]<br>         ;; localization-provider provides date handling utils to date and   time pickers.<br>         ;; cljs-time-adapter is a date adapter that allows you to use   cljs-time / goog.date date objects.<br>         [localization-provider {:date-adapter   cljs-time-adapter<br>                                 :adapter-locale DateTimeSymbols_en_US}<br>          [styles/theme-provider (styles/create-theme custom-theme)<br>           [form]]]])<br>      <br>      (defn ^{:after-load true, :dev/after-load true}<br>        mount []<br>        (let [root (rdom/create-root (js/document.getElementById &quot;app&quot;))]<br>          (rdom/render root [main])))<br>      <br>      (defn ^:export init []<br>        (mount))</body>\n</html>")
+	(title "Source of Hello Arttuka"))
+
+([HelloArttuka_Class21] of  CloFunction
+
+	(source "(let [root (rdom/create-root (js/document.getElementById \"app\"))]\n    (rdom/render root [main]))")
+	(title "run []"))
+
+([HelloArttuka_Class22] of  FigwheelController
+
+	(cljs-program [HelloArttuka_Class0])
+	(title "FigwheelController"))
+
+([HelloArttuka_Class3] of  CloVar
+
+	(source "{:palette {:primary   colors/orange\n                 :secondary colors/blue}}")
+	(title "CUSTOM-THEME"))
+
+([HelloArttuka_Class4] of  CloVar
+
+	(source "(let [prefix \"rmui-example\"]\n  {:root        (str prefix \"-root\")\n    :button    (str prefix \"-button\")\n    :text-field (str prefix \"-text-field\")})")
+	(title "CLASSES"))
+
+([HelloArttuka_Class5] of  CloVar
+
+	(source "(do\n  (defonce text-state (r/atom \"foobar\"))\n  (defonce select-state (r/atom 1))\n  (defonce date-picker-state (r/atom nil))\n  (defonce autocomplete-state (r/atom nil)))")
+	(title "STATES"))
+
+([HelloArttuka_Class6] of  CljsFunction
+
+	(source "(let [spacing (:spacing theme)]\n  {(str \"&.\" (:root classes))         {:margin-left (spacing 8)\n                                                     :align-items :flex-start}\n     (str \"& .\" (:button classes))    {:margin (spacing 1)}\n     (str \"& .\" (:text-field classes)) {:width        200\n                                                     :margin-left  (spacing 1)\n                                                     :margin-right (spacing 1)}})")
+	(title "custom-styles [{:keys [theme]}]"))
+
+([HelloArttuka_Class9] of  CljsFunction
+
+	(source "[toolbar {:disable-gutters true}\n    [button\n     {:variant  \"contained\"\n      :color    \"primary\"\n      :class    (:button CLASSES)\n      :on-click #(swap! text-state str \" foo\")}\n     \"Update value property\"\n     [add-box]]\n    [button\n     {:variant  \"outlined\"\n      :color    \"secondary\"\n      :class    (:button CLASSES)\n      :on-click (fn []\n                  (reset! text-state \"\")\n                  (reset! select-state 1)\n                  (reset! date-picker-state nil)\n                  (reset! autocomplete-state nil))}\n     \"Reset\"\n     [clear]]]")
+	(title "toolbarr []"))

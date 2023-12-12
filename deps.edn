@@ -16,7 +16,8 @@
         cljs-ajax/cljs-ajax {:mvn/version "0.8.4"}
         reagent/reagent {:mvn/version "1.2.0"}
         cljsjs/react {:mvn/version "18.2.0-1"}
-        cljsjs/react-dom {:mvn/version "18.2.0-1"}}
+        cljsjs/react-dom {:mvn/version "18.2.0-1"}
+        arttuka/reagent-material-ui {:mvn/version "5.11.12-0"}}
  :aliases {:pro {:main-opts ["-m" "pro-figwheel.main"]}
            :fig {:main-opts ["-m" "figwheel.main"]}}
  :paths ["src" "src/clojure" "classes" "src/cljs" "resources" "target"]}

@@ -30,6 +30,9 @@ $ lein run
 
 3. [Hello Backend](https://www.youtube.com/watch?v=12oEoJJOn30)
 
+4. [Hello Arttuka](https://youtu.be/xVGlMQBEX2A) - it introduces modern web GUI with the help of Arttuka's Reagent wrapper for MUI (formerly Material UI)[https://github.com/arttuka/reagent-material-ui](https://github.com/arttuka/reagent-material-ui)
+
+
 *Note on the lessons: When constructing ClojureScript programs for functions, you should create instances of the “CljsFunction” class, and not “CloFunction” as in the videos.*
 
 ## Description 

@@ -1,4 +1,4 @@
-; Wed Dec 06 18:32:55 MSK 2023
+; Tue Dec 12 11:02:27 MSK 2023
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -102,34 +102,6 @@
 	(is_hidden FALSE)
 	(widget_class_name "edu.stanford.smi.protege.widget.InstancesTab"))
 
-([KB_129329_Class472] of  Map
-
-	(entries
-		[KB_129329_Class473]
-		[KB_129329_Class474]
-		[KB_129329_Class475]))
-
-([KB_129329_Class473] of  Map_Entry
-
-	(key "suppress_instance_counting")
-	(key_class "java.lang.String")
-	(value "false")
-	(value_class "java.lang.String"))
-
-([KB_129329_Class474] of  Map_Entry
-
-	(key "add_name_on_instance_form")
-	(key_class "java.lang.String")
-	(value "false")
-	(value_class "java.lang.String"))
-
-([KB_129329_Class475] of  Map_Entry
-
-	(key "change_tracking_active")
-	(key_class "java.lang.String")
-	(value "false")
-	(value_class "java.lang.String"))
-
 ([KB_230468_Class0] of  String
 
 	(name "factory_class_name")
@@ -229,6 +201,34 @@
 
 	(name "instances_file_name")
 	(string_value "HelloWorld.pins"))
+
+([KB_930285_Class491] of  Map
+
+	(entries
+		[KB_930285_Class492]
+		[KB_930285_Class493]
+		[KB_930285_Class494]))
+
+([KB_930285_Class492] of  Map_Entry
+
+	(key "suppress_instance_counting")
+	(key_class "java.lang.String")
+	(value "false")
+	(value_class "java.lang.String"))
+
+([KB_930285_Class493] of  Map_Entry
+
+	(key "add_name_on_instance_form")
+	(key_class "java.lang.String")
+	(value "false")
+	(value_class "java.lang.String"))
+
+([KB_930285_Class494] of  Map_Entry
+
+	(key "change_tracking_active")
+	(key_class "java.lang.String")
+	(value "false")
+	(value_class "java.lang.String"))
 
 ([LAYOUT_PROPERTIES] of  Property_List
 

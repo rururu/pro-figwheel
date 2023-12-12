@@ -18,14 +18,14 @@ return devtools.formatters.state._STAR_current_state_STAR_;
 });
 devtools.formatters.state.update_current_state_BANG_ = (function devtools$formatters$state$update_current_state_BANG_(var_args){
 var args__4742__auto__ = [];
-var len__4736__auto___10493 = arguments.length;
-var i__4737__auto___10494 = (0);
+var len__4736__auto___13203 = arguments.length;
+var i__4737__auto___13204 = (0);
 while(true){
-if((i__4737__auto___10494 < len__4736__auto___10493)){
-args__4742__auto__.push((arguments[i__4737__auto___10494]));
+if((i__4737__auto___13204 < len__4736__auto___13203)){
+args__4742__auto__.push((arguments[i__4737__auto___13204]));
 
-var G__10495 = (i__4737__auto___10494 + (1));
-i__4737__auto___10494 = G__10495;
+var G__13205 = (i__4737__auto___13204 + (1));
+i__4737__auto___13204 = G__13205;
 continue;
 } else {
 }
@@ -48,11 +48,11 @@ return (devtools.formatters.state._STAR_current_state_STAR_ = cljs.core.apply.ca
 (devtools.formatters.state.update_current_state_BANG_.cljs$lang$maxFixedArity = (1));
 
 /** @this {Function} */
-(devtools.formatters.state.update_current_state_BANG_.cljs$lang$applyTo = (function (seq10491){
-var G__10492 = cljs.core.first.call(null,seq10491);
-var seq10491__$1 = cljs.core.next.call(null,seq10491);
+(devtools.formatters.state.update_current_state_BANG_.cljs$lang$applyTo = (function (seq13201){
+var G__13202 = cljs.core.first.call(null,seq13201);
+var seq13201__$1 = cljs.core.next.call(null,seq13201);
 var self__4723__auto__ = this;
-return self__4723__auto__.cljs$core$IFn$_invoke$arity$variadic(G__10492,seq10491__$1);
+return self__4723__auto__.cljs$core$IFn$_invoke$arity$variadic(G__13202,seq13201__$1);
 }));
 
 devtools.formatters.state.push_object_to_current_history_BANG_ = (function devtools$formatters$state$push_object_to_current_history_BANG_(object){
@@ -63,8 +63,8 @@ return new cljs.core.Keyword(null,"history","history",-247395220).cljs$core$IFn$
 });
 devtools.formatters.state.is_circular_QMARK_ = (function devtools$formatters$state$is_circular_QMARK_(object){
 var history = devtools.formatters.state.get_current_history.call(null);
-return cljs.core.some.call(null,(function (p1__10496_SHARP_){
-return (p1__10496_SHARP_ === object);
+return cljs.core.some.call(null,(function (p1__13206_SHARP_){
+return (p1__13206_SHARP_ === object);
 }),history);
 });
 devtools.formatters.state.prevent_recursion_QMARK_ = (function devtools$formatters$state$prevent_recursion_QMARK_(){

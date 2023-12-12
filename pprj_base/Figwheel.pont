@@ -1,4 +1,4 @@
-; Mon Dec 11 11:14:33 MSK 2023
+; Tue Dec 12 10:59:11 MSK 2023
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -10,6 +10,11 @@
 	(single-slot butt-save-ns
 		(type STRING)
 ;+		(value "Save Namespace/support.figwheel/save-ns")
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot butt-clear
+		(type STRING)
+;+		(value "Clear Cljs Folder/support.figwheel/clear-cljs")
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
 	(single-slot cljs-program
@@ -92,6 +97,11 @@
 (defclass FigwheelController
 	(is-a USER)
 	(role concrete)
+	(single-slot butt-clear
+		(type STRING)
+;+		(value "Clear Cljs Folder/support.figwheel/clear-cljs")
+;+		(cardinality 0 1)
+		(create-accessor read-write))
 	(single-slot butt-start
 		(type STRING)
 ;+		(value "start/support.figwheel/start-fig")

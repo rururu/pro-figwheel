@@ -11,8 +11,8 @@ goog.require('ajax.protocols');
  * is nonetheless really rather useful.
  */
 ajax.formats.raw_response_format = (function ajax$formats$raw_response_format(var_args){
-var G__12540 = arguments.length;
-switch (G__12540) {
+var G__9995 = arguments.length;
+switch (G__9995) {
 case 0:
 return ajax.formats.raw_response_format.cljs$core$IFn$_invoke$arity$0();
 
@@ -80,15 +80,15 @@ return ((cljs.core._EQ_.call(null,accept,"*/*")) || ((content_type.indexOf(accep
 });
 ajax.formats.detect_content_type = (function ajax$formats$detect_content_type(content_type,request,format_entry){
 var accept = ajax.formats.get_accept_entries.call(null,request,format_entry);
-return cljs.core.some.call(null,(function (p1__12542_SHARP_){
-return ajax.formats.content_type_matches.call(null,content_type,p1__12542_SHARP_);
+return cljs.core.some.call(null,(function (p1__9997_SHARP_){
+return ajax.formats.content_type_matches.call(null,content_type,p1__9997_SHARP_);
 }),accept);
 });
-ajax.formats.get_default_format = (function ajax$formats$get_default_format(response,p__12543){
-var map__12544 = p__12543;
-var map__12544__$1 = (((((!((map__12544 == null))))?(((((map__12544.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__12544.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__12544):map__12544);
-var request = map__12544__$1;
-var response_format = cljs.core.get.call(null,map__12544__$1,new cljs.core.Keyword(null,"response-format","response-format",1664465322));
+ajax.formats.get_default_format = (function ajax$formats$get_default_format(response,p__9998){
+var map__9999 = p__9998;
+var map__9999__$1 = (((((!((map__9999 == null))))?(((((map__9999.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__9999.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__9999):map__9999);
+var request = map__9999__$1;
+var response_format = cljs.core.get.call(null,map__9999__$1,new cljs.core.Keyword(null,"response-format","response-format",1664465322));
 var content_type = ajax.util.get_content_type.call(null,response);
 var accepted_format_QMARK_ = (function ajax$formats$get_default_format_$_accepted_format_QMARK_(format_entry){
 return ajax.formats.detect_content_type.call(null,content_type,request,format_entry);
@@ -101,14 +101,14 @@ var format = ajax.formats.get_default_format.call(null,response,request);
 return new cljs.core.Keyword(null,"read","read",1140058661).cljs$core$IFn$_invoke$arity$1(format).call(null,response);
 });
 });
-ajax.formats.accept_header = (function ajax$formats$accept_header(p__12547){
-var map__12548 = p__12547;
-var map__12548__$1 = (((((!((map__12548 == null))))?(((((map__12548.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__12548.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__12548):map__12548);
-var request = map__12548__$1;
-var response_format = cljs.core.get.call(null,map__12548__$1,new cljs.core.Keyword(null,"response-format","response-format",1664465322));
+ajax.formats.accept_header = (function ajax$formats$accept_header(p__10002){
+var map__10003 = p__10002;
+var map__10003__$1 = (((((!((map__10003 == null))))?(((((map__10003.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__10003.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__10003):map__10003);
+var request = map__10003__$1;
+var response_format = cljs.core.get.call(null,map__10003__$1,new cljs.core.Keyword(null,"response-format","response-format",1664465322));
 var formats = ((cljs.core.vector_QMARK_.call(null,response_format))?response_format:new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [response_format], null));
-return cljs.core.mapcat.call(null,(function (p1__12546_SHARP_){
-return ajax.formats.get_accept_entries.call(null,request,p1__12546_SHARP_);
+return cljs.core.mapcat.call(null,(function (p1__10001_SHARP_){
+return ajax.formats.get_accept_entries.call(null,request,p1__10001_SHARP_);
 }),formats);
 });
 /**

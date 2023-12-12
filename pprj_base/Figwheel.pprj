@@ -1,4 +1,4 @@
-; Mon Dec 11 11:14:33 MSK 2023
+; Tue Dec 12 10:59:11 MSK 2023
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -20,11 +20,11 @@
 ([BROWSER_SLOT_NAMES] of  Property_List
 
 	(properties
-		[Figwheel_ProjectKB_Class10306]
-		[Figwheel_ProjectKB_Class10307]
-		[Figwheel_ProjectKB_Class10308]
-		[Figwheel_ProjectKB_Class10309]
-		[Figwheel_ProjectKB_Class10310]))
+		[Figwheel_ProjectKB_Class10353]
+		[Figwheel_ProjectKB_Class10354]
+		[Figwheel_ProjectKB_Class10355]
+		[Figwheel_ProjectKB_Class10356]
+		[Figwheel_ProjectKB_Class10357]))
 
 ([CLSES_TAB] of  Widget
 
@@ -191,27 +191,41 @@
 ([Figwheel_ProjectKB_Class10278] of  Property_List
 )
 
-([Figwheel_ProjectKB_Class10306] of  String
+([Figwheel_ProjectKB_Class10306] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "butt-clear")
+	(property_list [Figwheel_ProjectKB_Class10307])
+	(widget_class_name "clojuretab.ClojureActionButton")
+	(width 200)
+	(x 0)
+	(y 240))
+
+([Figwheel_ProjectKB_Class10307] of  Property_List
+)
+
+([Figwheel_ProjectKB_Class10353] of  String
 
 	(name "CSS")
 	(string_value "title"))
 
-([Figwheel_ProjectKB_Class10307] of  String
+([Figwheel_ProjectKB_Class10354] of  String
 
 	(name ":INSTANCE-ANNOTATION")
 	(string_value "%3AANNOTATION-TEXT"))
 
-([Figwheel_ProjectKB_Class10308] of  String
+([Figwheel_ProjectKB_Class10355] of  String
 
 	(name "HTML")
 	(string_value "title"))
 
-([Figwheel_ProjectKB_Class10309] of  String
+([Figwheel_ProjectKB_Class10356] of  String
 
 	(name "FigwheelController")
 	(string_value "{cljs-program%3A+}cljs-program"))
 
-([Figwheel_ProjectKB_Class10310] of  String
+([Figwheel_ProjectKB_Class10357] of  String
 
 	(name ":PAL-CONSTRAINT")
 	(string_value "%3APAL-NAME"))
@@ -667,7 +681,8 @@
 		[Figwheel_ProjectKB_Class247]
 		[Figwheel_ProjectKB_Class249]
 		[Figwheel_ProjectKB_Class253]
-		[Figwheel_ProjectKB_Class20230]))
+		[Figwheel_ProjectKB_Class20230]
+		[Figwheel_ProjectKB_Class10306]))
 
 ([Figwheel_ProjectKB_Class242] of  Property_List
 
@@ -1066,28 +1081,28 @@
 	(name "instances_file_name")
 	(string_value "Figwheel.pins"))
 
-([KB_324716_Class297] of  Map
+([KB_854031_Class297] of  Map
 
 	(entries
-		[KB_324716_Class298]
-		[KB_324716_Class299]
-		[KB_324716_Class300]))
+		[KB_854031_Class298]
+		[KB_854031_Class299]
+		[KB_854031_Class300]))
 
-([KB_324716_Class298] of  Map_Entry
+([KB_854031_Class298] of  Map_Entry
 
 	(key "suppress_instance_counting")
 	(key_class "java.lang.String")
 	(value "false")
 	(value_class "java.lang.String"))
 
-([KB_324716_Class299] of  Map_Entry
+([KB_854031_Class299] of  Map_Entry
 
 	(key "add_name_on_instance_form")
 	(key_class "java.lang.String")
 	(value "false")
 	(value_class "java.lang.String"))
 
-([KB_324716_Class300] of  Map_Entry
+([KB_854031_Class300] of  Map_Entry
 
 	(key "change_tracking_active")
 	(key_class "java.lang.String")

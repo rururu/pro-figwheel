@@ -20,6 +20,7 @@
                  [cljs-ajax "0.8.4"]
                  [reagent "1.2.0"]
                  [cljsjs/react "18.2.0-1"]
-                 [cljsjs/react-dom "18.2.0-1"]]
+                 [cljsjs/react-dom "18.2.0-1"]
+                 [arttuka/reagent-material-ui "5.11.12-0"]]
   :repositories {"local" {:url ~(str (.toURI (java.io.File. "repo"))) :checksum :warn}}
   :main pro-figwheel.main)
