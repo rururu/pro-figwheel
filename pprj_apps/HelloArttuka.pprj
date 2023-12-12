@@ -1,4 +1,4 @@
-; Tue Dec 12 11:51:45 MSK 2023
+; Tue Dec 12 12:43:02 MSK 2023
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -101,34 +101,6 @@
 
 	(is_hidden FALSE)
 	(widget_class_name "edu.stanford.smi.protege.widget.InstancesTab"))
-
-([KB_182164_Class491] of  Map
-
-	(entries
-		[KB_182164_Class492]
-		[KB_182164_Class493]
-		[KB_182164_Class494]))
-
-([KB_182164_Class492] of  Map_Entry
-
-	(key "suppress_instance_counting")
-	(key_class "java.lang.String")
-	(value "false")
-	(value_class "java.lang.String"))
-
-([KB_182164_Class493] of  Map_Entry
-
-	(key "add_name_on_instance_form")
-	(key_class "java.lang.String")
-	(value "false")
-	(value_class "java.lang.String"))
-
-([KB_182164_Class494] of  Map_Entry
-
-	(key "change_tracking_active")
-	(key_class "java.lang.String")
-	(value "false")
-	(value_class "java.lang.String"))
 
 ([KB_414390_Class0] of  String
 
@@ -275,6 +247,34 @@
 
 ([KB_510810_Class201] of  Property_List
 )
+
+([KB_735193_Class491] of  Map
+
+	(entries
+		[KB_735193_Class492]
+		[KB_735193_Class493]
+		[KB_735193_Class494]))
+
+([KB_735193_Class492] of  Map_Entry
+
+	(key "suppress_instance_counting")
+	(key_class "java.lang.String")
+	(value "false")
+	(value_class "java.lang.String"))
+
+([KB_735193_Class493] of  Map_Entry
+
+	(key "add_name_on_instance_form")
+	(key_class "java.lang.String")
+	(value "false")
+	(value_class "java.lang.String"))
+
+([KB_735193_Class494] of  Map_Entry
+
+	(key "change_tracking_active")
+	(key_class "java.lang.String")
+	(value "false")
+	(value_class "java.lang.String"))
 
 ([LAYOUT_PROPERTIES] of  Property_List
 

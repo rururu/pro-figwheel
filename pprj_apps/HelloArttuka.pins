@@ -1,4 +1,4 @@
-; Tue Dec 12 11:51:45 MSK 2023
+; Tue Dec 12 12:43:02 MSK 2023
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -99,16 +99,6 @@
 
 	(source "(react-component [{:keys [options placeholder]}]\n                 (let [listbox-ref (use-ref nil)\n                       [listbox-visible? set-listbox-visible] (use-state false)\n                       {:keys [get-button-props get-listbox-props context-value value]} (use-select {:listbox-ref listbox-ref\n                                                                                                     :options     options})]\n                   (use-effect #(do (when listbox-visible?\n                                      (some-> (.-current listbox-ref) (.focus)))\n                                    js/undefined)\n                               #js [listbox-visible?])\n                   [ROOT {:on-mouse-over #(set-listbox-visible true)\n                          :on-mouse-out  #(set-listbox-visible false)\n                          :on-focus      #(set-listbox-visible true)\n                          :on-blur       #(set-listbox-visible false)}\n                    [TOGGLE (merge {:style {\"--color\" value}}\n                                   (js->clj' (get-button-props)))\n                     (or value [:span.placeholder placeholder])]\n                    [LISTBOX (merge {:class-name (when-not listbox-visible? \"hidden\")}\n                                    (js->clj' (get-listbox-props)))\n                     [select-unstyled-context-provider {:value context-value}\n                      (for [{:keys [value label]} options]\n                        ^{:key value} [:> OPTION {:value value}\n                                       label])]]]))")
 	(title "component"))
-
-([HelloArttuka_Class10011] of  CljsProgram
-
-	(cloNamespace [HelloArttuka_Class10012])
-	(title "Arttuka Data Grid"))
-
-([HelloArttuka_Class10012] of  CloNamespace
-
-	(source "(:require \n  [reagent.core :as r]\n  [reagent-mui.x.data-grid :refer [data-grid]]\n  [reagent-mui.util :refer [clj->js' wrap-clj-function]])")
-	(title "hello.arttuka.data-grid"))
 
 ([HelloArttuka_Class11] of  CljsFunction
 
