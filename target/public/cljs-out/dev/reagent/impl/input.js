@@ -9,10 +9,10 @@ reagent.impl.input.has_selection_api_QMARK_ = (function reagent$impl$input$has_s
 return cljs.core.contains_QMARK_.call(null,reagent.impl.input.these_inputs_have_selection_api,input_type);
 });
 reagent.impl.input._STAR_force_set_dom_value_STAR_ = false;
-reagent.impl.input.input_node_set_value = (function reagent$impl$input$input_node_set_value(node,rendered_value,dom_value,component,p__11181){
-var map__11182 = p__11181;
-var map__11182__$1 = (((((!((map__11182 == null))))?(((((map__11182.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__11182.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__11182):map__11182);
-var on_write = cljs.core.get.call(null,map__11182__$1,new cljs.core.Keyword(null,"on-write","on-write",31519475));
+reagent.impl.input.input_node_set_value = (function reagent$impl$input$input_node_set_value(node,rendered_value,dom_value,component,p__22167){
+var map__22168 = p__22167;
+var map__22168__$1 = (((((!((map__22168 == null))))?(((((map__22168.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__22168.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__22168):map__22168);
+var on_write = cljs.core.get.call(null,map__22168__$1,new cljs.core.Keyword(null,"on-write","on-write",31519475));
 if(cljs.core.truth_((function (){var or__4126__auto__ = (!((((node === document.activeElement)) && (reagent.impl.input.has_selection_api_QMARK_.call(null,node.type)) && (typeof rendered_value === 'string') && (typeof dom_value === 'string'))));
 if(or__4126__auto__){
 return or__4126__auto__;
@@ -33,12 +33,12 @@ return null;
 var node_value = node.value;
 if(cljs.core.not_EQ_.call(null,node_value,dom_value)){
 return reagent.impl.batching.do_after_render.call(null,(function (){
-var _STAR_force_set_dom_value_STAR__orig_val__11184 = reagent.impl.input._STAR_force_set_dom_value_STAR_;
-var _STAR_force_set_dom_value_STAR__temp_val__11185 = true;
-(reagent.impl.input._STAR_force_set_dom_value_STAR_ = _STAR_force_set_dom_value_STAR__temp_val__11185);
+var _STAR_force_set_dom_value_STAR__orig_val__22170 = reagent.impl.input._STAR_force_set_dom_value_STAR_;
+var _STAR_force_set_dom_value_STAR__temp_val__22171 = true;
+(reagent.impl.input._STAR_force_set_dom_value_STAR_ = _STAR_force_set_dom_value_STAR__temp_val__22171);
 
 try{return reagent.impl.input.input_component_set_value.call(null,component);
-}finally {(reagent.impl.input._STAR_force_set_dom_value_STAR_ = _STAR_force_set_dom_value_STAR__orig_val__11184);
+}finally {(reagent.impl.input._STAR_force_set_dom_value_STAR_ = _STAR_force_set_dom_value_STAR__orig_val__22170);
 }}));
 } else {
 var existing_offset_from_end = (cljs.core.count.call(null,node_value) - node.selectionStart);
@@ -135,8 +135,8 @@ delete jsprops["value"];
 
 (jsprops.defaultValue = value);
 
-(jsprops.onChange = (function (p1__11186_SHARP_){
-return reagent.impl.input.input_handle_change.call(null,this$,on_change,p1__11186_SHARP_);
+(jsprops.onChange = (function (p1__22172_SHARP_){
+return reagent.impl.input.input_handle_change.call(null,this$,on_change,p1__22172_SHARP_);
 }));
 
 return (jsprops.ref = this$.reagentRefFn);
@@ -148,8 +148,8 @@ reagent.impl.input.input_unmount = (function reagent$impl$input$input_unmount(th
 return (this$.cljsInputLive = null);
 });
 reagent.impl.input.input_component_QMARK_ = (function reagent$impl$input$input_component_QMARK_(x){
-var G__11187 = x;
-switch (G__11187) {
+var G__22173 = x;
+switch (G__22173) {
 case "input":
 case "textarea":
 return true;

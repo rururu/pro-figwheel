@@ -6,31 +6,31 @@
 (def OPTIONS (clj->js [{:label "Denmark"
                         :code  "dk"
                         :flag  "\uD83C\uDDE9\uD83C\uDDF0"}
-                       {:label "Finland"
+             {:label "Finland"
                         :code  "fi"
                         :flag  "\uD83C\uDDEB\uD83C\uDDEE"}
-                       {:label "France"
+             {:label "France"
                         :code  "fr"
                         :flag  "\uD83C\uDDEB\uD83C\uDDF7"}
-                       {:label "Germany"
+             {:label "Germany"
                         :code  "de"
                         :flag  "\uD83C\uDDE9\uD83C\uDDEA"}
-                       {:label "Iceland"
+             {:label "Iceland"
                         :code  "is"
                         :flag  "\uD83C\uDDEE\uD83C\uDDF8"}
-                       {:label "Italy"
+             {:label "Italy"
                         :code  "it"
                         :flag  "\uD83C\uDDEE\uD83C\uDDF9"}
-                       {:label "Norway"
+             {:label "Norway"
                         :code  "no"
                         :flag  "\uD83C\uDDF3\uD83C\uDDF4"}
-                       {:label "Spain"
+             {:label "Spain"
                         :code  "es"
                         :flag  "\uD83C\uDDEA\uD83C\uDDF8"}
-                       {:label "Sweden"
+             {:label "Sweden"
                         :code  "se"
                         :flag  "\uD83C\uDDF8\uD83C\uDDEA"}
-                       {:label "United Kingdom"
+             {:label "United Kingdom"
                         :code  "gb"
                         :flag  "\uD83C\uDDEC\uD83C\uDDE7"}]))
 (defn autocomplete [{:keys [class value on-change]}]

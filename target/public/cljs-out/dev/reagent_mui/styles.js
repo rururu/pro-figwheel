@@ -13,8 +13,8 @@ reagent_mui.styles.experimental_css_vars_provider_STAR_ = reagent.core.adapt_rea
  * Note: input component has to take all its props (including children) in a single map.
  */
 reagent_mui.styles.styled = (function reagent_mui$styles$styled(var_args){
-var G__10042 = arguments.length;
-switch (G__10042) {
+var G__23292 = arguments.length;
+switch (G__23292) {
 case 2:
 return reagent_mui.styles.styled.cljs$core$IFn$_invoke$arity$2((arguments[(0)]),(arguments[(1)]));
 
@@ -47,8 +47,8 @@ return reagent.core.adapt_react_class.call(null,styled_component.call(null,reage
  * See: https://mui.com/material-ui/customization/theming/#responsivefontsizes-theme-options-theme
  */
 reagent_mui.styles.responsive_font_sizes = (function reagent_mui$styles$responsive_font_sizes(var_args){
-var G__10045 = arguments.length;
-switch (G__10045) {
+var G__23295 = arguments.length;
+switch (G__23295) {
 case 1:
 return reagent_mui.styles.responsive_font_sizes.cljs$core$IFn$_invoke$arity$1((arguments[(0)]));
 
@@ -86,14 +86,14 @@ return reagent_mui.util.js__GT_clj_SINGLEQUOTE_.call(null,reagent_mui.styles.glo
  */
 reagent_mui.styles.theme_provider = (function reagent_mui$styles$theme_provider(var_args){
 var args__4742__auto__ = [];
-var len__4736__auto___10049 = arguments.length;
-var i__4737__auto___10050 = (0);
+var len__4736__auto___23299 = arguments.length;
+var i__4737__auto___23300 = (0);
 while(true){
-if((i__4737__auto___10050 < len__4736__auto___10049)){
-args__4742__auto__.push((arguments[i__4737__auto___10050]));
+if((i__4737__auto___23300 < len__4736__auto___23299)){
+args__4742__auto__.push((arguments[i__4737__auto___23300]));
 
-var G__10051 = (i__4737__auto___10050 + (1));
-i__4737__auto___10050 = G__10051;
+var G__23301 = (i__4737__auto___23300 + (1));
+i__4737__auto___23300 = G__23301;
 continue;
 } else {
 }
@@ -111,11 +111,11 @@ return cljs.core.into.call(null,new cljs.core.PersistentVector(null, 2, 5, cljs.
 (reagent_mui.styles.theme_provider.cljs$lang$maxFixedArity = (1));
 
 /** @this {Function} */
-(reagent_mui.styles.theme_provider.cljs$lang$applyTo = (function (seq10047){
-var G__10048 = cljs.core.first.call(null,seq10047);
-var seq10047__$1 = cljs.core.next.call(null,seq10047);
+(reagent_mui.styles.theme_provider.cljs$lang$applyTo = (function (seq23297){
+var G__23298 = cljs.core.first.call(null,seq23297);
+var seq23297__$1 = cljs.core.next.call(null,seq23297);
 var self__4723__auto__ = this;
-return self__4723__auto__.cljs$core$IFn$_invoke$arity$variadic(G__10048,seq10047__$1);
+return self__4723__auto__.cljs$core$IFn$_invoke$arity$variadic(G__23298,seq23297__$1);
 }));
 
 /**
@@ -128,14 +128,14 @@ return self__4723__auto__.cljs$core$IFn$_invoke$arity$variadic(G__10048,seq10047
  */
 reagent_mui.styles.experimental_css_vars_provider = (function reagent_mui$styles$experimental_css_vars_provider(var_args){
 var args__4742__auto__ = [];
-var len__4736__auto___10054 = arguments.length;
-var i__4737__auto___10055 = (0);
+var len__4736__auto___23304 = arguments.length;
+var i__4737__auto___23305 = (0);
 while(true){
-if((i__4737__auto___10055 < len__4736__auto___10054)){
-args__4742__auto__.push((arguments[i__4737__auto___10055]));
+if((i__4737__auto___23305 < len__4736__auto___23304)){
+args__4742__auto__.push((arguments[i__4737__auto___23305]));
 
-var G__10056 = (i__4737__auto___10055 + (1));
-i__4737__auto___10055 = G__10056;
+var G__23306 = (i__4737__auto___23305 + (1));
+i__4737__auto___23305 = G__23306;
 continue;
 } else {
 }
@@ -153,11 +153,11 @@ return cljs.core.into.call(null,new cljs.core.PersistentVector(null, 2, 5, cljs.
 (reagent_mui.styles.experimental_css_vars_provider.cljs$lang$maxFixedArity = (1));
 
 /** @this {Function} */
-(reagent_mui.styles.experimental_css_vars_provider.cljs$lang$applyTo = (function (seq10052){
-var G__10053 = cljs.core.first.call(null,seq10052);
-var seq10052__$1 = cljs.core.next.call(null,seq10052);
+(reagent_mui.styles.experimental_css_vars_provider.cljs$lang$applyTo = (function (seq23302){
+var G__23303 = cljs.core.first.call(null,seq23302);
+var seq23302__$1 = cljs.core.next.call(null,seq23302);
 var self__4723__auto__ = this;
-return self__4723__auto__.cljs$core$IFn$_invoke$arity$variadic(G__10053,seq10052__$1);
+return self__4723__auto__.cljs$core$IFn$_invoke$arity$variadic(G__23303,seq23302__$1);
 }));
 
 /**

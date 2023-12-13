@@ -71,3 +71,9 @@
 2023.12.12 12:38:31.550 MSK INFO: UI display time = 0 sec -- ProjectManager$2.run()
 2023.12.12 12:41:31.980 MSK INFO: Project load time for file:/home/ru/clojure/pro-figwheel/pprj_apps/HelloArttuka.pprj: 0 sec -- ProjectChooser.loadProject()
 2023.12.12 12:41:32.263 MSK INFO: UI display time = 0 sec -- ProjectManager$2.run()
+2023.12.12 12:58:52.838 MSK INFO: *** SYSTEM START ***
+2023.12.12 12:58:53.005 MSK WARNING: missing bundle: protege_text -- BundleHelper.<init>()
+2023.12.12 12:59:04.653 MSK INFO: Project load time for file:/home/ru/clojure/pro-figwheel/pprj_apps/HelloWorld.pprj: 0 sec -- ProjectChooser.loadProject()
+2023.12.12 12:59:08.650 MSK INFO: UI display time = 3 sec -- ProjectManager$2.run()
+2023.12.12 13:04:26.384 MSK INFO: Project load time for file:/home/ru/clojure/pro-figwheel/pprj_apps/HelloArttuka.pprj: 0 sec -- ProjectChooser.loadProject()
+2023.12.12 13:04:26.673 MSK INFO: UI display time = 0 sec -- ProjectManager$2.run()

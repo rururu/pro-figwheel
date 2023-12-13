@@ -1,4 +1,4 @@
-; Tue Dec 12 12:43:02 MSK 2023
+; Wed Dec 13 14:13:56 MSK 2023
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -248,28 +248,28 @@
 ([KB_510810_Class201] of  Property_List
 )
 
-([KB_735193_Class491] of  Map
+([KB_538930_Class491] of  Map
 
 	(entries
-		[KB_735193_Class492]
-		[KB_735193_Class493]
-		[KB_735193_Class494]))
+		[KB_538930_Class492]
+		[KB_538930_Class493]
+		[KB_538930_Class494]))
 
-([KB_735193_Class492] of  Map_Entry
+([KB_538930_Class492] of  Map_Entry
 
 	(key "suppress_instance_counting")
 	(key_class "java.lang.String")
 	(value "false")
 	(value_class "java.lang.String"))
 
-([KB_735193_Class493] of  Map_Entry
+([KB_538930_Class493] of  Map_Entry
 
 	(key "add_name_on_instance_form")
 	(key_class "java.lang.String")
 	(value "false")
 	(value_class "java.lang.String"))
 
-([KB_735193_Class494] of  Map_Entry
+([KB_538930_Class494] of  Map_Entry
 
 	(key "change_tracking_active")
 	(key_class "java.lang.String")

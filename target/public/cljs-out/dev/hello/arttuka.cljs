@@ -26,8 +26,8 @@
             [hello.arttuka.select :as select]
             ;;[hello.arttuka.data-grid :as data-grid]
             ["@mui/material/TextField" :as MuiTextField]))
-(def CUSTOM-THEME {:palette {:primary   colors/purple
-                 :secondary colors/red}})
+(def CUSTOM-THEME {:palette {:primary   colors/orange
+                 :secondary colors/blue}})
 (def CLASSES (let [prefix "rmui-example"]
   {:root        (str prefix "-root")
     :button    (str prefix "-button")
@@ -43,80 +43,79 @@
 (defn toolbarr []
   [toolbar {:disable-gutters true}
     [button
-     {:variant  "contained"
-      :color    "primary"
-      :class    (:button CLASSES)
-      :on-click #(swap! text-state str " foo")}
-     "Update value property"
-     [add-box]]
+      {:variant  "contained"
+       :color      "primary"
+       :class      (:button CLASSES)
+       :on-click #(swap! text-state str " foo")}
+      "Update value property"
+      [add-box]]
     [button
-     {:variant  "outlined"
-      :color    "secondary"
-      :class    (:button CLASSES)
-      :on-click (fn []
-                  (reset! text-state "")
-                  (reset! select-state 1)
-                  (reset! date-picker-state nil)
-                  (reset! autocomplete-state nil))}
-     "Reset"
-     [clear]]])
+      {:variant  "outlined"
+        :color    "secondary"
+        :class    (:button CLASSES)
+        :on-click (fn []
+                        (reset! text-state "")
+                        (reset! select-state 1)
+                        (reset! date-picker-state nil)
+                        (reset! autocomplete-state nil))}
+      "Reset"
+      [clear]]])
 
 (defn tf-text-input []
   [text-field
-    {:value       @text-state
+    {:value      @text-state
      :label       "Text input"
      :placeholder "Placeholder"
      :helper-text "Helper text"
      :class       (:text-field CLASSES)
-     :on-change   (fn [e]
-                    (reset! text-state (event-value e)))}])
+     :on-change (fn [e]
+                          (reset! text-state (event-value e)))}])
 
 (defn tf-text-with-adornment []
   [text-field
-    {:value       @text-state
+    {:value      @text-state
      :label       "Text with Adornment"
      :placeholder "Placeholder"
      :helper-text "Helper text"
      :class       (:text-field CLASSES)
-     :on-change   (fn [e]
-                    (reset! text-state (event-value e)))
-     :InputProps  {:end-adornment 
-                           (r/as-element
-                             [input-adornment {:position "end"} "Baz"])}}])
+     :on-change (fn [e]
+                          (reset! text-state (event-value e)))
+     :InputProps {:end-adornment (r/as-element
+                                                        [input-adornment {:position "end"} "Baz"])}}])
 
 (defn tf-textarea []
   [text-field
-    {:value       @text-state
+    {:value      @text-state
      :label       "Textarea"
      :placeholder "Placeholder"
      :helper-text "Helper text"
      :class       (:text-field CLASSES)
-     :on-change   (fn [e]
-                    (reset! text-state (event-value e)))
-     :multiline   true
+     :on-change (fn [e]
+                          (reset! text-state (event-value e)))
+     :multiline  true
      :rows        10}])
 
 (defn tf-autosized-textarea []
   [text-field
-    {:id        :textarea-autosize
+    {:id         :textarea-autosize
      :value     @text-state
      :label     "Autosized textarea"
      :class     (:text-field CLASSES)
      :on-change (fn [e]
                   (reset! text-state (event-value e)))
-     :multiline true
+     :multiline   true
      :min-rows  2
-     :max-rows  10}])
+     :max-rows 10}])
 
 (defn tf-select []
   [text-field
-    {:value       @select-state
+    {:value      @select-state
      :label       "Select"
      :placeholder "Placeholder"
      :helper-text "Helper text"
      :class       (:text-field CLASSES)
-     :on-change   (fn [e]
-                    (reset! select-state (event-value e)))
+     :on-change (fn [e]
+                         (reset! select-state (event-value e)))
      :select      true}
     [menu-item
      {:value 1}
@@ -130,7 +129,7 @@
            :spacing   2}
     [chip {:icon  (r/as-element [face])
            :label "Icon element example, r/as-element"}]
-    [chip {:icon  (r/as-element [anchor])
+    [chip {:icon  (r/as-element [face-outlined])
            :label "Another example icon"}]])
 
 (defn autocompl []
